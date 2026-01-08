@@ -7,13 +7,11 @@ import PIC06954 from '../../assets/PIC06954.webp'
 import PIC06951 from '../../assets/PIC06951.webp'
 import PIC06944 from '../../assets/PIC06944.webp'
 import PIC06927 from '../../assets/PIC06927.webp'
-import PIC06918 from '../../assets/PIC06918.webp'
-import PIC06896 from '../../assets/PIC06896.webp'
-import PIC06864 from '../../assets/PIC06864.webp'
-import PIC06855 from '../../assets/PIC06855.webp'
-import PIC06833 from '../../assets/PIC06833.webp'
-import PIC06815 from '../../assets/PIC06815.webp'
 import PIC06807 from '../../assets/PIC06807.webp'
+import PIC06918 from '../../assets/PIC06918.webp'
+import PIC06883 from '../../assets/PIC06883.webp'
+import PIC06871 from '../../assets/PIC06871.webp'
+import PIC06833 from '../../assets/PIC06833.webp'
 import PIC06800 from '../../assets/PIC06800.webp'
 
 function Galeria() {
@@ -30,18 +28,17 @@ function Galeria() {
     { id: 4, alt: 'Alojamiento 4', src: PIC06954 },
     { id: 5, alt: 'Alojamiento 5', src: PIC06951 },
     { id: 6, alt: 'Alojamiento 6', src: PIC06944 },
-    { id: 7, alt: 'Alojamiento 7', src: PIC06927 }
+    { id: 7, alt: 'Alojamiento 7', src: PIC06807 },
+    { id: 8, alt: 'Alojamiento 8', src: PIC06927 }
   ]
 
   const imagenesEventos = [
-    { id: 8, alt: 'Evento 1', src: PIC06918 },
-    { id: 9, alt: 'Evento 2', src: PIC06896 },
-    { id: 10, alt: 'Evento 3', src: PIC06864 },
-    { id: 11, alt: 'Evento 4', src: PIC06855 },
-    { id: 12, alt: 'Evento 5', src: PIC06833 },
-    { id: 13, alt: 'Evento 6', src: PIC06815 },
-    { id: 14, alt: 'Evento 7', src: PIC06807 },
-    { id: 15, alt: 'Evento 8', src: PIC06800 }
+    { id: 9, alt: 'Evento 1', src: PIC06871 },
+    { id: 10, alt: 'Evento 2', src: PIC06883 },
+    { id: 11, alt: 'Evento 3', src: PIC06918 },
+    { id: 12, alt: 'Evento 4', src: PIC06800 },
+    { id: 13, alt: 'Evento 5', src: PIC06807 },
+    { id: 14, alt: 'Evento 6', src: PIC06833 }
   ]
 
   // Auto-scroll carrusel Alojamiento (infinito)

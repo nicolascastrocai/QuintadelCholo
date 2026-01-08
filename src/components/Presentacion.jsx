@@ -1,7 +1,7 @@
 import React from 'react'
 import './Presentacion.css'
 import IMG0765 from '../../assets/PIC06918.webp'
-import PIC06800 from '../../assets/PIC06800.webp'
+import PIC06807 from '../../assets/PIC06807.webp'
 
 function Presentacion() {
   return (
@@ -25,7 +25,7 @@ function Presentacion() {
             className="presentacion-imagen"
           />
           <img
-            src={PIC06800}
+            src={PIC06807}
             alt="Espacio histórico 2"
             className="presentacion-imagen"
           />
