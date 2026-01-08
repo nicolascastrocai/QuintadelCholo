@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import LogoLaQuinta from '../../assets/WhatsApp Image 2026-01-08 at 12.30.59.png'
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -36,7 +37,7 @@ function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="header-logo">
-          <span>La Quinta del Cholo</span>
+          <img src={LogoLaQuinta} alt="La Quinta del Cholo" />
         </div>
         
         <button

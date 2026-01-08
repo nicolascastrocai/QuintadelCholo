@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import LogoHero from '../../assets/Gemini_Generated_Image_up0ukqup0ukqup0u (1).png'
 
 function Hero() {
   return (
@@ -17,6 +18,9 @@ function Hero() {
       </div>
       
       <div className="hero-cta-bar">
+        <div className="hero-cta-logo">
+          <img src={LogoHero} alt="Isotipo La Quinta del Cholo" />
+        </div>
         <div className="hero-cta-copy hero-cta-copy--wide">
           <p className="hero-cta-title">El alma del campo, hecha hogar</p>
           <p className="hero-cta-description hero-cta-description--large">

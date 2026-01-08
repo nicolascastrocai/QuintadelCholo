@@ -20,12 +20,19 @@
   gap: 2rem;
 }
 
-.header-logo span {
-  font-family: var(--font-titulos);
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-negro);
-  letter-spacing: 0.5px;
+.header-logo {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transform: scale(2.50);
+  transform-origin: left center;
 }
 
 .header-nav {
