@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-crudo: #F4F1EB;
+  --color-beige: #E0D4C0;
+  --color-negro: #1A1A1A;
+  
+  --font-titulos: 'Shippori Mincho B1', serif;
+  --font-ui: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-ui);
+  color: var(--color-negro);
+  background-color: var(--color-crudo);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

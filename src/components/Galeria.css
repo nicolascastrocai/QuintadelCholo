@@ -1,0 +1,253 @@
+.galeria {
+  width: 100%;
+  background-color: var(--color-crudo);
+  padding: 10rem 3rem;
+}
+
+.galeria-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.galeria-titulo {
+  font-family: var(--font-titulos);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: var(--color-negro);
+  margin-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.galeria-seccion {
+  margin-bottom: 5rem;
+}
+
+.galeria-seccion:last-child {
+  margin-bottom: 0;
+}
+
+.galeria-subtitulo {
+  font-family: var(--font-titulos);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-negro);
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.carrusel-wrapper-mini {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.carrusel-mini {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carrusel-track-mini {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.carrusel-slide-mini {
+  min-width: calc(33.33% - 1rem);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.carrusel-imagen-mini {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.carrusel-slide-mini:hover .carrusel-imagen-mini {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.carrusel-btn-mini {
+  background-color: white;
+  color: var(--color-negro);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-bottom: 3px;
+}
+
+.carrusel-btn-mini:hover {
+  background-color: var(--color-negro);
+  color: var(--color-crudo);
+  transform: scale(1.1);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox-cerrar {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  z-index: 2001;
+  padding: 1rem;
+}
+
+.lightbox-cerrar:hover {
+  opacity: 1;
+}
+
+.lightbox-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: min(90vw, 1000px);
+  max-height: 90vh;
+}
+
+.lightbox-imagen {
+  width: 100%;
+  height: min(80vh, 600px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  color: white;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.lightbox-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 2001;
+  line-height: 1;
+  padding-bottom: 6px;
+}
+
+.lightbox-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-btn-prev {
+  left: 2rem;
+}
+
+.lightbox-btn-next {
+  right: 2rem;
+}
+
+@media (max-width: 968px) {
+  .carrusel-slide-mini {
+    min-width: calc(50% - 0.75rem);
+  }
+  
+  .carrusel-track-mini {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    padding: 6rem 2rem;
+  }
+  
+  .galeria-seccion {
+    margin-bottom: 4rem;
+  }
+  
+  .carrusel-wrapper-mini {
+    gap: 1rem;
+  }
+  
+  .carrusel-slide-mini {
+    min-width: 100%;
+  }
+  
+  .carrusel-track-mini {
+    gap: 0;
+  }
+  
+  .carrusel-imagen-mini {
+    height: 250px;
+  }
+  
+  .carrusel-btn-mini {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  
+  .lightbox-imagen {
+    height: 400px;
+  }
+  
+  .lightbox-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+  
+  .lightbox-btn-prev {
+    left: 1rem;
+  }
+  
+  .lightbox-btn-next {
+    right: 1rem;
+  }
+}

@@ -1,0 +1,45 @@
+.frase-identidad {
+  width: 100%;
+  background-color: var(--color-negro);
+  padding: 8rem 3rem;
+  position: relative;
+}
+
+.frase-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.frase-content {
+  max-width: 800px;
+}
+
+.frase-titulo {
+  font-family: var(--font-titulos);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: var(--color-crudo);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.frase-texto {
+  font-family: var(--font-ui);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--color-crudo);
+  line-height: 1.8;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .frase-identidad {
+    padding: 5rem 2rem;
+  }
+  
+  .frase-titulo {
+    margin-bottom: 1.5rem;
+  }
+}
