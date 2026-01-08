@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Eventos.css'
+import PIC06883 from '../../assets/PIC06883.webp'
 
 function Eventos({ onAgregarReserva }) {
   const evento = {
@@ -12,7 +13,7 @@ function Eventos({ onAgregarReserva }) {
       'Servicio de catering personalizado',
       'Coordinación dedicada durante todo el evento'
     ],
-    imagen: '/assets/PIC06883.jpg'
+    imagen: PIC06883
   }
 
   const [formData, setFormData] = useState({})

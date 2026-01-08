@@ -1,5 +1,6 @@
 import React from 'react'
 import './CTAPrincipal.css'
+import PIC06871 from '../../assets/PIC06871.webp'
 
 function CTAPrincipal() {
   const scrollToSection = (id) => {
@@ -33,7 +34,7 @@ function CTAPrincipal() {
           </div>
         </div>
         <div className="cta-visuales">
-          <img src="/assets/PIC06871.jpg" alt="Piscina de La Quinta" />
+          <img src={PIC06871} alt="Piscina de La Quinta" />
         </div>
       </div>
     </section>

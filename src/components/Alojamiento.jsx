@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Alojamiento.css'
+import PIC06935 from '../../assets/PIC06935.webp'
+import PIC06951 from '../../assets/PIC06951.webp'
 
 const addDaysISO = (dateString, days) => {
   if (!dateString) return ''
@@ -18,7 +20,7 @@ function Alojamiento({ onAgregarReserva }) {
       descripcion: 'La casa principal con todas sus habitaciones y espacios comunes',
       capacidad: '8-10 personas',
       servicios: ['4 habitaciones', 'Cocina equipada', 'Living comedor', 'Parrillero', 'Jardín privado'],
-      imagen: '/assets/PIC06935.jpg'
+      imagen: PIC06935
     },
     {
       id: 'suite-campo',
@@ -26,7 +28,7 @@ function Alojamiento({ onAgregarReserva }) {
       descripcion: 'Habitación independiente con vista al campo',
       capacidad: '2-3 personas',
       servicios: ['Baño privado', 'Terraza', 'Desayuno incluido', 'Acceso a jardines'],
-      imagen: '/assets/PIC06951.jpg'
+      imagen: PIC06951
     }
   ]
 
