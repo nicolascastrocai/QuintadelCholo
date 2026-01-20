@@ -2,7 +2,9 @@ import React from 'react'
 import './Alojamiento.css'
 import PIC06935 from '../../assets/PIC06935.webp'
 
-function Alojamiento({ onAgregarReserva }) {
+const AIRBNB_URL = 'https://www.airbnb.com.ar/rooms/725190658039888448?check_in=2026-02-06&check_out=2026-02-08&location=Pueblo%20Esther%2C%20Santa%20Fe&search_mode=regular_search&source_impression_id=p3_1768602388_P3lNQEqlWSd8OaJ1&previous_page_section_name=1001&federated_search_id=636691a9-3b29-49ae-baa6-8e840eba59f7'
+
+function Alojamiento() {
 
   const alojamiento = {
     id: 'alojamiento-general',
@@ -11,16 +13,8 @@ function Alojamiento({ onAgregarReserva }) {
     imagen: PIC06935
   }
 
-  const handleAgregar = () => {
-    if (onAgregarReserva) {
-      onAgregarReserva({
-        tipo: 'alojamiento',
-        nombre: alojamiento.nombre,
-        personas: '',
-        fechas: '',
-        id: alojamiento.id
-      })
-    }
+  const irAAirbnb = () => {
+    window.open(AIRBNB_URL, '_blank')
   }
 
   return (
@@ -45,7 +39,7 @@ function Alojamiento({ onAgregarReserva }) {
               <p className="alojamiento-card-descripcion">{alojamiento.descripcion}</p>
 
               <div className="alojamiento-cta">
-                <button className="alojamiento-btn" onClick={handleAgregar}>
+                <button className="alojamiento-btn" onClick={irAAirbnb}>
                   Cotizá tu estadía
                 </button>
               </div>

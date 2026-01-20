@@ -94,7 +94,7 @@ function App() {
           <Hero />
           <CTAPrincipal />
           <Eventos onAgregarReserva={agregarReserva} />
-          <Alojamiento onAgregarReserva={agregarReserva} />
+          <Alojamiento />
           <Presentacion />
           <Galeria />
           <Ubicacion />
