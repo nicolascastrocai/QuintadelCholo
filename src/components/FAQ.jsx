@@ -14,28 +14,12 @@ function FAQ() {
       respuesta: 'No. La Quinta del Cholo ofrece propuestas tanto de alojamiento como de eventos privados, con condiciones y valores personalizados según cada experiencia.'
     },
     {
-      pregunta: '¿Cuál es la capacidad de alojamiento de la quinta?',
-      respuesta: 'La capacidad es de 8 personas; contamos con tres camas matrimoniales y dos individuales.'
-    },
-    {
       pregunta: '¿Es posible realizar eventos durante la estadía?',
       respuesta: 'Sí, es posible realizar eventos durante la estadía, siempre con previa coordinación y bajo condiciones específicas según el tipo de celebración.'
     },
     {
-      pregunta: '¿Qué incluye el alquiler?',
-      respuesta: 'El alquiler incluye el uso exclusivo del predio y de los espacios habilitados según la modalidad contratada. Los servicios adicionales se cotizan de manera personalizada.'
-    },
-    {
-      pregunta: '¿La quinta cuenta con pileta?',
-      respuesta: 'Sí, contamos con pileta al aire libre.'
-    },
-    {
       pregunta: '¿Se permite el ingreso de proveedores externos para eventos?',
-      respuesta: 'Trabajamos con una selección de proveedores exclusivos que garantizan la calidad y el nivel de cada evento. Para catering, técnica y barra de tragos contamos con alianzas con Ana Borrel, Martha Cura, VCA, Pepe Brandy y Ley Seca. En caso de requerir un proveedor diferente, evaluamos la posibilidad de manera personalizada.'
-    },
-    {
-      pregunta: '¿Se aceptan mascotas?',
-      respuesta: 'Por el momento no se aceptan mascotas. Esta decisión nos permite cuidar cada espacio y asegurar una experiencia confortable para todos nuestros huéspedes.'
+      respuesta: 'Trabajamos con un abanico de proveedores de primera calidad, cuidadosamente seleccionados para garantizar el nivel y la excelencia de cada evento. Si desean conocer el detalle de los proveedores recomendados para cada servicio, pueden consultarnos y con gusto les enviaremos la información correspondiente. En caso de querer trabajar con un proveedor diferente, la posibilidad se evalúa de manera personalizada, cuidando siempre los estándares y la experiencia del lugar.'
     },
     {
       pregunta: '¿Cómo se confirma una reserva?',

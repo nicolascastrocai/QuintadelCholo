@@ -1,18 +1,32 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './Galeria.css'
-import PIC06964 from '../../assets/PIC06964.webp'
-import PIC06959 from '../../assets/PIC06959.webp'
-import PIC06957 from '../../assets/PIC06957.webp'
-import PIC06954 from '../../assets/PIC06954.webp'
-import PIC06951 from '../../assets/PIC06951.webp'
-import PIC06944 from '../../assets/PIC06944.webp'
-import PIC06927 from '../../assets/PIC06927.webp'
-import PIC06807 from '../../assets/PIC06807.webp'
-import PIC06918 from '../../assets/PIC06918.webp'
-import PIC06883 from '../../assets/PIC06883.webp'
-import PIC06871 from '../../assets/PIC06871.webp'
-import PIC06833 from '../../assets/PIC06833.webp'
-import PIC06800 from '../../assets/PIC06800.webp'
+import PIC06800_2 from '../../assets/alojamiento/PIC06800 (2).webp'
+import PIC06815 from '../../assets/alojamiento/PIC06815.webp'
+import PIC06871_2 from '../../assets/alojamiento/PIC06871 (2).webp'
+import PIC06912_3 from '../../assets/alojamiento/PIC06912 (3).webp'
+import PIC06927_1 from '../../assets/alojamiento/PIC06927 (1).webp'
+import PIC06954_1 from '../../assets/alojamiento/PIC06954 (1).webp'
+import PIC06964_1 from '../../assets/alojamiento/PIC06964 (1).webp'
+import PIC06972_2 from '../../assets/alojamiento/PIC06972 (2).webp'
+import PIC06991 from '../../assets/alojamiento/PIC06991.webp'
+import PIC07005 from '../../assets/alojamiento/PIC07005.webp'
+import PIC07023_2 from '../../assets/alojamiento/PIC07023 (2).webp'
+import PIC07039_1 from '../../assets/alojamiento/PIC07039 (1).webp'
+import Quinta105_2 from '../../assets/Eventos/Quinta 105 (2).webp'
+import Quinta108 from '../../assets/Eventos/Quinta 108.webp'
+import Quinta138 from '../../assets/Eventos/Quinta 138.webp'
+import Quinta15_1 from '../../assets/Eventos/Quinta 15 (1).webp'
+import Quinta152 from '../../assets/Eventos/Quinta 152.webp'
+import Quinta159_1 from '../../assets/Eventos/Quinta 159 (1).webp'
+import Quinta16 from '../../assets/Eventos/Quinta 16.webp'
+import Quinta20_1 from '../../assets/Eventos/Quinta 20 (1).webp'
+import Quinta25_1 from '../../assets/Eventos/Quinta 25 (1).webp'
+import Quinta50 from '../../assets/Eventos/Quinta 50.webp'
+import Quinta67 from '../../assets/Eventos/Quinta 67.webp'
+import Quinta68_1 from '../../assets/Eventos/Quinta 68 (1).webp'
+import Quinta7_1 from '../../assets/Eventos/Quinta 7 (1).webp'
+import Quinta80_1 from '../../assets/Eventos/Quinta 80 (1).webp'
+import Quinta83 from '../../assets/Eventos/Quinta 83.webp'
 
 function Galeria() {
   const [currentIndexAlojamiento, setCurrentIndexAlojamiento] = useState(0)
@@ -20,25 +34,45 @@ function Galeria() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxImages, setLightboxImages] = useState([])
   const [lightboxIndex, setLightboxIndex] = useState(0)
+  const getSlidesToShow = () => {
+    if (typeof window === 'undefined') return 3
+    if (window.innerWidth <= 768) return 1
+    if (window.innerWidth <= 968) return 2
+    return 3
+  }
+  const [slidesToShow, setSlidesToShow] = useState(getSlidesToShow)
 
   const imagenesAlojamiento = [
-    { id: 1, alt: 'Alojamiento 1', src: PIC06964 },
-    { id: 2, alt: 'Alojamiento 2', src: PIC06959 },
-    { id: 3, alt: 'Alojamiento 3', src: PIC06957 },
-    { id: 4, alt: 'Alojamiento 4', src: PIC06954 },
-    { id: 5, alt: 'Alojamiento 5', src: PIC06951 },
-    { id: 6, alt: 'Alojamiento 6', src: PIC06944 },
-    { id: 7, alt: 'Alojamiento 7', src: PIC06807 },
-    { id: 8, alt: 'Alojamiento 8', src: PIC06927 }
+    { id: 1, alt: 'Alojamiento 1', src: PIC06800_2 },
+    { id: 2, alt: 'Alojamiento 2', src: PIC06815 },
+    { id: 3, alt: 'Alojamiento 3', src: PIC06871_2 },
+    { id: 4, alt: 'Alojamiento 4', src: PIC06912_3 },
+    { id: 5, alt: 'Alojamiento 5', src: PIC06927_1 },
+    { id: 6, alt: 'Alojamiento 6', src: PIC06954_1 },
+    { id: 7, alt: 'Alojamiento 7', src: PIC06964_1 },
+    { id: 8, alt: 'Alojamiento 8', src: PIC06972_2 },
+    { id: 9, alt: 'Alojamiento 9', src: PIC06991 },
+    { id: 10, alt: 'Alojamiento 10', src: PIC07005 },
+    { id: 11, alt: 'Alojamiento 11', src: PIC07023_2 },
+    { id: 12, alt: 'Alojamiento 12', src: PIC07039_1 }
   ]
 
   const imagenesEventos = [
-    { id: 9, alt: 'Evento 1', src: PIC06871 },
-    { id: 10, alt: 'Evento 2', src: PIC06883 },
-    { id: 11, alt: 'Evento 3', src: PIC06918 },
-    { id: 12, alt: 'Evento 4', src: PIC06800 },
-    { id: 13, alt: 'Evento 5', src: PIC06807 },
-    { id: 14, alt: 'Evento 6', src: PIC06833 }
+    { id: 101, alt: 'Evento 1', src: Quinta105_2 },
+    { id: 102, alt: 'Evento 2', src: Quinta108 },
+    { id: 103, alt: 'Evento 3', src: Quinta138 },
+    { id: 104, alt: 'Evento 4', src: Quinta15_1 },
+    { id: 105, alt: 'Evento 5', src: Quinta152 },
+    { id: 106, alt: 'Evento 6', src: Quinta159_1 },
+    { id: 107, alt: 'Evento 7', src: Quinta16 },
+    { id: 108, alt: 'Evento 8', src: Quinta20_1 },
+    { id: 109, alt: 'Evento 9', src: Quinta25_1 },
+    { id: 110, alt: 'Evento 10', src: Quinta50 },
+    { id: 111, alt: 'Evento 11', src: Quinta67 },
+    { id: 112, alt: 'Evento 12', src: Quinta68_1 },
+    { id: 113, alt: 'Evento 13', src: Quinta7_1 },
+    { id: 114, alt: 'Evento 14', src: Quinta80_1 },
+    { id: 115, alt: 'Evento 15', src: Quinta83 }
   ]
 
   // Auto-scroll carrusel Alojamiento (infinito)
@@ -135,6 +169,17 @@ function Galeria() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [lightboxOpen])
 
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesToShow(getSlidesToShow())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const slideWidth = 100 / slidesToShow
+
   return (
     <section id="galeria" className="galeria">
       <div className="galeria-container">
@@ -150,7 +195,7 @@ function Galeria() {
               <div 
                 className="carrusel-track-mini"
                 style={{ 
-                  transform: `translateX(-${currentIndexAlojamiento * 33.33}%)`,
+                  transform: `translateX(-${currentIndexAlojamiento * slideWidth}%)`,
                   transition: currentIndexAlojamiento === 0 ? 'none' : 'transform 0.5s ease-in-out'
                 }}
               >
@@ -162,7 +207,7 @@ function Galeria() {
                   >
                     <div
                       className="carrusel-imagen-mini"
-                      style={{ backgroundImage: `url(${imagen.src})` }}
+                      style={{ backgroundImage: `url("${imagen.src}")` }}
                     ></div>
                   </div>
                 ))}
@@ -183,7 +228,7 @@ function Galeria() {
               <div 
                 className="carrusel-track-mini"
                 style={{ 
-                  transform: `translateX(-${currentIndexEventos * 33.33}%)`,
+                  transform: `translateX(-${currentIndexEventos * slideWidth}%)`,
                   transition: currentIndexEventos === 0 ? 'none' : 'transform 0.5s ease-in-out'
                 }}
               >
@@ -195,7 +240,7 @@ function Galeria() {
                   >
                     <div
                       className="carrusel-imagen-mini"
-                      style={{ backgroundImage: `url(${imagen.src})` }}
+                      style={{ backgroundImage: `url("${imagen.src}")` }}
                     ></div>
                   </div>
                 ))}
@@ -218,7 +263,7 @@ function Galeria() {
           <div className="lightbox-contenido" onClick={(e) => e.stopPropagation()}>
             <div
               className="lightbox-imagen"
-              style={{ backgroundImage: `url(${lightboxImages[lightboxIndex]?.src})` }}
+              style={{ backgroundImage: `url("${lightboxImages[lightboxIndex]?.src}")` }}
             ></div>
             <div className="lightbox-info">
               <span>{lightboxIndex + 1} / {lightboxImages.length}</span>

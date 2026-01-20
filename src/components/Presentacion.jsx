@@ -11,8 +11,7 @@ function Presentacion() {
           <span className="presentacion-eyebrow">Conocé La Quinta del Cholo</span>
           <h2 className="presentacion-titulo">Un lugar de encuentro, repleto de historia</h2>
           <p className="presentacion-parrafo">
-            Ubicada en el corazón del campo rosarino, La Quinta del Cholo es una casona 
-            restaurada con más de un siglo de historia. Un espacio que combina la calidez 
+            La Quinta del Cholo es una casona restaurada con más de un siglo de historia. Un espacio que combina la calidez 
             de lo familiar con la belleza de la naturaleza, ideal para descansar o celebrar 
             momentos únicos.
           </p>

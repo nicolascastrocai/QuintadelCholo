@@ -1,22 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './Eventos.css'
 import PIC06883 from '../../assets/PIC06883.webp'
 
 function Eventos({ onAgregarReserva }) {
+  const hoy = new Date().toISOString().split('T')[0]
   const evento = {
     id: 'evento-general',
     nombre: 'Evento',
     descripcion: 'Contanos cómo imaginás tu celebración y lo organizamos junto a vos',
-    capacidad: 'Hasta 80 personas',
-    servicios: [
-      'Espacios abiertos y cerrados preparados',
-      'Servicio de catering personalizado',
-      'Coordinación dedicada durante todo el evento'
-    ],
     imagen: PIC06883
   }
 
   const [formData, setFormData] = useState({})
+  const fechaInputRef = useRef(null)
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
@@ -26,6 +22,16 @@ function Eventos({ onAgregarReserva }) {
         [field]: value
       }
     }))
+  }
+
+  const abrirCalendario = () => {
+    if (fechaInputRef.current) {
+      if (typeof fechaInputRef.current.showPicker === 'function') {
+        fechaInputRef.current.showPicker()
+      } else {
+        fechaInputRef.current.focus()
+      }
+    }
   }
 
   const handleAgregar = () => {
@@ -68,17 +74,7 @@ function Eventos({ onAgregarReserva }) {
               <h3 className="evento-nombre">{evento.nombre}</h3>
               <p className="evento-descripcion">{evento.descripcion}</p>
               <div className="evento-detalles">
-                <span className="evento-capacidad">
-                  <strong>Capacidad:</strong> {evento.capacidad}
-                </span>
-                <div className="evento-servicios">
-                  <strong>Incluye:</strong>
-                  <ul className="evento-card-list">
-                    {evento.servicios.map((servicio, index) => (
-                      <li key={index}>{servicio}</li>
-                    ))}
-                  </ul>
-                </div>
+                <span className="evento-capacidad" />
               </div>
 
               <div className="evento-form">
@@ -86,16 +82,19 @@ function Eventos({ onAgregarReserva }) {
                   <label>Tipo de evento</label>
                   <input
                     type="text"
-                    placeholder="Ej: Cena íntima"
+                    placeholder="Ej: Casamiento"
                     value={formData[evento.id]?.tipoEvento || ''}
                     onChange={(e) => handleInputChange('tipoEvento', e.target.value)}
                   />
                 </div>
                 <div className="form-group">
-                  <label>Elige tu fecha</label>
+                  <label>Elegí tu fecha</label>
                   <input
-                    type="text"
-                    placeholder="Ej: 20 de febrero"
+                    type="date"
+                    min={hoy}
+                    ref={fechaInputRef}
+                    onClick={abrirCalendario}
+                    onFocus={abrirCalendario}
                     value={formData[evento.id]?.fechas || ''}
                     onChange={(e) => handleInputChange('fechas', e.target.value)}
                   />
@@ -113,7 +112,7 @@ function Eventos({ onAgregarReserva }) {
                   className="evento-btn"
                   onClick={handleAgregar}
                 >
-                  Agregar a la reserva
+                  Cotizá tu evento
                 </button>
               </div>
             </div>

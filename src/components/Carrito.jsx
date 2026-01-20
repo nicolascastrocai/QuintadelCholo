@@ -3,6 +3,7 @@ import './Carrito.css'
 
 function Carrito({ reservas, onEliminarReserva, onEnviarSolicitud }) {
   const [mostrarCarrito, setMostrarCarrito] = useState(false)
+  const [modalAbierto, setModalAbierto] = useState(false)
   const [datosContacto, setDatosContacto] = useState({
     nombre: '',
     email: '',
@@ -35,10 +36,12 @@ function Carrito({ reservas, onEliminarReserva, onEnviarSolicitud }) {
       })
     }
     
-    alert('¡Solicitud enviada! Te contactaremos pronto.')
     setDatosContacto({ nombre: '', email: '', telefono: '', observaciones: '' })
     setMostrarCarrito(false)
+    setModalAbierto(true)
   }
+
+  const cerrarModal = () => setModalAbierto(false)
 
   return (
     <>
@@ -151,6 +154,18 @@ function Carrito({ reservas, onEliminarReserva, onEnviarSolicitud }) {
                 Enviar solicitud
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {modalAbierto && (
+        <div className="solicitud-modal-overlay" onClick={cerrarModal}>
+          <div className="solicitud-modal" onClick={(e) => e.stopPropagation()}>
+            <h4>¡Solicitud enviada!</h4>
+            <p>Gracias por escribirnos. Te contactaremos a la brevedad.</p>
+            <button className="solicitud-modal-btn" onClick={cerrarModal}>
+              Cerrar
+            </button>
           </div>
         </div>
       )}

@@ -14,7 +14,9 @@ function CTAPrincipal() {
     <section className="cta-principal">
       <div className="cta-container">
         <div className="cta-content">
-          <h2 className="cta-titulo">Viví La Quinta del Cholo</h2>
+          <h2 className="cta-titulo">Viví la experiencia de 
+              La Quinta del Cholo
+          </h2>
           <p className="cta-texto">
             Elegí tu experiencia ideal: un refugio tranquilo para descansar o el escenario perfecto para tu celebración.
           </p>

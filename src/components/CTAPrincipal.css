@@ -41,7 +41,7 @@
 
 .cta-titulo {
   font-family: var(--font-titulos);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
   font-weight: 600;
   color: var(--color-negro);
   line-height: 1.2;
