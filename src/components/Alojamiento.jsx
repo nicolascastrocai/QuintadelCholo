@@ -1,6 +1,6 @@
 import React from 'react'
 import './Alojamiento.css'
-import PIC06935 from '../../assets/PIC06935.webp'
+import PIC06897 from '../../assets/PIC06897 (1) (1).jpg'
 
 const AIRBNB_URL = 'https://www.airbnb.com.ar/rooms/725190658039888448?check_in=2026-02-06&check_out=2026-02-08&location=Pueblo%20Esther%2C%20Santa%20Fe&search_mode=regular_search&source_impression_id=p3_1768602388_P3lNQEqlWSd8OaJ1&previous_page_section_name=1001&federated_search_id=636691a9-3b29-49ae-baa6-8e840eba59f7'
 
@@ -10,7 +10,7 @@ function Alojamiento() {
     id: 'alojamiento-general',
     nombre: 'Casona Completa',
     descripcion: 'La casa principal con todas sus habitaciones y espacios comunes, preparada para que desconectes del ritmo diario.',
-    imagen: PIC06935
+    imagen: PIC06897
   }
 
   const irAAirbnb = () => {
@@ -32,7 +32,7 @@ function Alojamiento() {
           <div className="alojamiento-card-hero">
             <div
               className="alojamiento-card-hero-media"
-              style={{ backgroundImage: `url(${alojamiento.imagen})` }}
+              style={{ backgroundImage: `url("${alojamiento.imagen}")` }}
             ></div>
             <div className="alojamiento-card-hero-body">
               <h3 className="alojamiento-card-nombre">{alojamiento.nombre}</h3>
