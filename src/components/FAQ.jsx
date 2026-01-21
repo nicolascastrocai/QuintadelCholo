@@ -14,10 +14,6 @@ function FAQ() {
       respuesta: 'No. La Quinta del Cholo ofrece propuestas tanto de alojamiento como de eventos privados, con condiciones y valores personalizados según cada experiencia.'
     },
     {
-      pregunta: '¿Es posible realizar eventos durante la estadía?',
-      respuesta: 'Sí, es posible realizar eventos durante la estadía, siempre con previa coordinación y bajo condiciones específicas según el tipo de celebración.'
-    },
-    {
       pregunta: '¿Se permite el ingreso de proveedores externos para eventos?',
       respuesta: 'Trabajamos con un abanico de proveedores de primera calidad, cuidadosamente seleccionados para garantizar el nivel y la excelencia de cada evento. Si desean conocer el detalle de los proveedores recomendados para cada servicio, pueden consultarnos y con gusto les enviaremos la información correspondiente. En caso de querer trabajar con un proveedor diferente, la posibilidad se evalúa de manera personalizada, cuidando siempre los estándares y la experiencia del lugar.'
     },

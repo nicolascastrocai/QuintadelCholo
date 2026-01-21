@@ -97,8 +97,8 @@ function App() {
           <Alojamiento />
           <Presentacion />
           <Galeria />
-          <Ubicacion />
           <FAQ />
+          <Ubicacion />
           <Footer />
           <WhatsAppButton />
           <Carrito 

@@ -77,8 +77,9 @@
 }
 
 .hero-cta-copy {
-  max-width: 880px;
-  text-align: left;
+  max-width: none;
+  width: 100%;
+  text-align: center;
   flex: 1;
 }
 

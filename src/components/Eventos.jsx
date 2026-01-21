@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import './Eventos.css'
-import PIC06883 from '../../assets/PIC06883.webp'
+import EventoHero from '../../assets/Quinta 105 (1) (1).jpg'
 
 function Eventos({ onAgregarReserva }) {
   const hoy = new Date().toISOString().split('T')[0]
@@ -8,7 +8,7 @@ function Eventos({ onAgregarReserva }) {
     id: 'evento-general',
     nombre: 'Evento',
     descripcion: 'Contanos cómo imaginás tu celebración y lo organizamos junto a vos',
-    imagen: PIC06883
+    imagen: EventoHero
   }
 
   const [formData, setFormData] = useState({})
@@ -59,7 +59,9 @@ function Eventos({ onAgregarReserva }) {
       <div className="eventos-hero">
         <div className="eventos-hero-content">
           <span className="eventos-eyebrow">Eventos privados</span>
-          <h2 className="eventos-titulo">Celebrá en La Quinta del Cholo</h2>
+          <h2 className="eventos-titulo">
+            Celebrá en <span style={{ whiteSpace: 'nowrap' }}>La Quinta del Cholo</span>
+          </h2>
           <p className="eventos-texto">
             Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.
           </p>
@@ -68,7 +70,7 @@ function Eventos({ onAgregarReserva }) {
           <div className="evento-card-hero">
             <div
               className="evento-card-hero-media"
-              style={{ backgroundImage: `url(${evento.imagen})` }}
+              style={{ backgroundImage: `url("${evento.imagen}")` }}
             ></div>
             <div className="evento-card-hero-body">
               <h3 className="evento-nombre">{evento.nombre}</h3>

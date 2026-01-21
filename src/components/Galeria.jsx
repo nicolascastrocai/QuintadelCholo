@@ -12,6 +12,10 @@ import PIC06991 from '../../assets/alojamiento/PIC06991.webp'
 import PIC07005 from '../../assets/alojamiento/PIC07005.webp'
 import PIC07023_2 from '../../assets/alojamiento/PIC07023 (2).webp'
 import PIC07039_1 from '../../assets/alojamiento/PIC07039 (1).webp'
+import PIC07088_1 from '../../assets/alojamiento/PIC07088 (1).webp'
+import PIC07014 from '../../assets/alojamiento/PIC07014.webp'
+import PIC06839_1 from '../../assets/alojamiento/PIC06839 (1).jpg'
+import PIC06813 from '../../assets/alojamiento/PIC06813.webp'
 import Quinta105_2 from '../../assets/Eventos/Quinta 105 (2).webp'
 import Quinta108 from '../../assets/Eventos/Quinta 108.webp'
 import Quinta138 from '../../assets/Eventos/Quinta 138.webp'
@@ -54,7 +58,11 @@ function Galeria() {
     { id: 9, alt: 'Alojamiento 9', src: PIC06991 },
     { id: 10, alt: 'Alojamiento 10', src: PIC07005 },
     { id: 11, alt: 'Alojamiento 11', src: PIC07023_2 },
-    { id: 12, alt: 'Alojamiento 12', src: PIC07039_1 }
+    { id: 12, alt: 'Alojamiento 12', src: PIC07039_1 },
+    { id: 13, alt: 'Alojamiento 13', src: PIC07088_1 },
+    { id: 14, alt: 'Alojamiento 14', src: PIC07014 },
+    { id: 15, alt: 'Alojamiento 15', src: PIC06839_1 },
+    { id: 16, alt: 'Alojamiento 16', src: PIC06813 }
   ]
 
   const imagenesEventos = [

@@ -22,7 +22,9 @@ function Alojamiento() {
       <div className="alojamiento-hero">
         <div className="alojamiento-hero-content">
           <span className="alojamiento-eyebrow">Alojamiento privado</span>
-          <h2 className="alojamiento-hero-titulo">Alojamiento en La Quinta del Cholo</h2>
+          <h2 className="alojamiento-hero-titulo">
+            Alojamiento en <span style={{ whiteSpace: 'nowrap' }}>La Quinta del Cholo</span>
+          </h2>
           <p className="alojamiento-hero-texto">
             Un refugio en el corazón del campo, pensado para descansar, reconectar y disfrutar del tiempo sin apuro, rodeado de naturaleza y calma.
           </p>
