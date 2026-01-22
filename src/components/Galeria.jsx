@@ -31,6 +31,7 @@ import Quinta68_1 from '../../assets/Eventos/Quinta 68 (1).webp'
 import Quinta7_1 from '../../assets/Eventos/Quinta 7 (1).webp'
 import Quinta80_1 from '../../assets/Eventos/Quinta 80 (1).webp'
 import Quinta83 from '../../assets/Eventos/Quinta 83.webp'
+import EventoVideo from '../../assets/D&F (Final) (1).mp4'
 
 function Galeria() {
   const [currentIndexAlojamiento, setCurrentIndexAlojamiento] = useState(0)
@@ -80,7 +81,12 @@ function Galeria() {
     { id: 112, alt: 'Evento 12', src: Quinta68_1 },
     { id: 113, alt: 'Evento 13', src: Quinta7_1 },
     { id: 114, alt: 'Evento 14', src: Quinta80_1 },
-    { id: 115, alt: 'Evento 15', src: Quinta83 }
+    { id: 115, alt: 'Evento 15', src: Quinta83 },
+    {
+      id: 116,
+      alt: 'Video evento',
+      video: EventoVideo
+    }
   ]
 
   // Auto-scroll carrusel Alojamiento (infinito)
@@ -240,18 +246,40 @@ function Galeria() {
                   transition: currentIndexEventos === 0 ? 'none' : 'transform 0.5s ease-in-out'
                 }}
               >
-                {[...imagenesEventos, ...imagenesEventos].map((imagen, index) => (
-                  <div 
-                    key={`event-${index}`}
-                    className="carrusel-slide-mini"
-                    onClick={() => abrirLightbox(imagenesEventos, index % imagenesEventos.length)}
-                  >
-                    <div
-                      className="carrusel-imagen-mini"
-                      style={{ backgroundImage: `url("${imagen.src}")` }}
-                    ></div>
-                  </div>
-                ))}
+                {[...imagenesEventos, ...imagenesEventos].map((imagen, index) => {
+                  const baseIndex = index % imagenesEventos.length
+                  const item = imagenesEventos[baseIndex]
+                  const isVideo = Boolean(item.video)
+                  const clickHandler = () => abrirLightbox(imagenesEventos, baseIndex)
+
+                  return (
+                    <div 
+                      key={`event-${index}`}
+                      className={`carrusel-slide-mini ${isVideo ? 'carrusel-slide-mini--video' : ''}`}
+                      onClick={clickHandler}
+                      role={isVideo ? 'presentation' : 'button'}
+                    >
+                      {isVideo ? (
+                        <div className="carrusel-video-mini">
+                          <video
+                            src={item.video}
+                            muted
+                            autoPlay
+                            loop
+                            playsInline
+                            preload="metadata"
+                          ></video>
+                          <div className="carrusel-video-overlay" aria-hidden="true"></div>
+                        </div>
+                      ) : (
+                        <div
+                          className="carrusel-imagen-mini"
+                          style={{ backgroundImage: `url("${item.src}")` }}
+                        ></div>
+                      )}
+                    </div>
+                  )
+                })}
               </div>
             </div>
 
@@ -269,10 +297,21 @@ function Galeria() {
           </button>
 
           <div className="lightbox-contenido" onClick={(e) => e.stopPropagation()}>
-            <div
-              className="lightbox-imagen"
-              style={{ backgroundImage: `url("${lightboxImages[lightboxIndex]?.src}")` }}
-            ></div>
+            {lightboxImages[lightboxIndex]?.video ? (
+              <div className="lightbox-video">
+                <video
+                  src={lightboxImages[lightboxIndex].video}
+                  autoPlay
+                  controls
+                  preload="auto"
+                ></video>
+              </div>
+            ) : (
+              <div
+                className="lightbox-imagen"
+                style={{ backgroundImage: `url("${lightboxImages[lightboxIndex]?.src}")` }}
+              ></div>
+            )}
             <div className="lightbox-info">
               <span>{lightboxIndex + 1} / {lightboxImages.length}</span>
             </div>
