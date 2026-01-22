@@ -61,8 +61,8 @@
 }
 
 .presentacion-imagen {
-  width: 70%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 520px;
   border-radius: 12px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
   object-fit: cover;
@@ -78,7 +78,8 @@
 
 @media (max-width: 968px) {
   .presentacion {
-    padding: 6rem 2rem 4rem;
+    padding: 5rem 1rem 3rem;
+    background-color: var(--color-crudo);
   }
   
   .presentacion-container {

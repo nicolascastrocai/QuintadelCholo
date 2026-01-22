@@ -45,3 +45,17 @@
 .intro-overlay--hidden .intro-overlay__img {
   transition-delay: 0s;
 }
+
+.heading-nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .heading-nowrap {
+    white-space: normal;
+  }
+}
+
+h2 {
+  margin-left: -4px;
+}

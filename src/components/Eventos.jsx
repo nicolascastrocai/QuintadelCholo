@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './Eventos.css'
 import EventoHero from '../../assets/Quinta 105 (1) (1).jpg'
 
@@ -59,12 +59,8 @@ function Eventos({ onAgregarReserva }) {
       <div className="eventos-hero">
         <div className="eventos-hero-content">
           <span className="eventos-eyebrow">Eventos privados</span>
-          <h2 className="eventos-titulo">
-            Celebrá en <span style={{ whiteSpace: 'nowrap' }}>La Quinta del Cholo</span>
-          </h2>
-          <p className="eventos-texto">
-            Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.
-          </p>
+          <h2 className="eventos-titulo">Celebrá en <span className="heading-nowrap">La Quinta del Cholo</span></h2>
+          <p className="eventos-texto">Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.</p>
         </div>
         <div className="eventos-hero-card">
           <div className="evento-card-hero">

@@ -37,6 +37,7 @@
   border-radius: 0 20px 20px 0;
   object-fit: cover;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  display: block;
 }
 
 .cta-titulo {
@@ -84,7 +85,7 @@
 
 @media (max-width: 768px) {
   .cta-principal {
-    padding: 5rem 2rem;
+    padding: 4rem 1rem;
   }
   
   .cta-botones {
@@ -109,5 +110,34 @@
   .cta-visuales img {
     border-radius: 0 0 20px 20px;
     min-height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    width: 100%;
+    gap: 0;
+  }
+
+  .cta-content,
+  .cta-visuales {
+    width: 100%;
+  }
+
+  .cta-content {
+    border-radius: 0;
+    padding: 2.25rem 1.75rem;
+  }
+
+  .cta-visuales {
+    margin-top: 0;
+  }
+
+  .cta-visuales img {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+    display: block;
   }
 }

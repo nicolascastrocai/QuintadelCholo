@@ -119,11 +119,13 @@
   padding-bottom: 3px;
 }
 
+
 .carrusel-btn-mini:hover {
   background-color: var(--color-negro);
   color: var(--color-crudo);
   transform: scale(1.1);
 }
+
 
 .lightbox {
   position: fixed;
@@ -256,11 +258,19 @@
   }
   
   .carrusel-wrapper-mini {
-    gap: 1rem;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0;
   }
-  
+
   .carrusel-slide-mini {
     min-width: 100%;
+    padding: 0 0.15rem;
+  }
+  
+  .carrusel-mini {
+    width: calc(100% - 80px);
+    padding: 0;
   }
   
   .carrusel-track-mini {
@@ -268,17 +278,23 @@
   }
   
   .carrusel-imagen-mini {
-    height: 250px;
+    height: min(72vw, 320px);
+    border-radius: 12px;
   }
 
   .carrusel-video-mini {
-    height: 250px;
+    height: min(72vw, 320px);
+    border-radius: 12px;
   }
   
   .carrusel-btn-mini {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+    position: static;
+    transform: none;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.9);
   }
   
   .lightbox-imagen {

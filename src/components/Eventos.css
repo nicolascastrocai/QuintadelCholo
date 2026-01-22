@@ -305,3 +305,31 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .eventos-hero {
+    padding: 4rem 0.75rem;
+  }
+
+  .eventos-hero-content,
+  .eventos-hero-card {
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .eventos-hero-card {
+    justify-content: center;
+  }
+
+  .evento-card-hero {
+    max-width: none;
+  }
+
+  .eventos-texto {
+    max-width: none;
+  }
+
+  .evento-card-hero-body {
+    padding: 2rem;
+  }
+}

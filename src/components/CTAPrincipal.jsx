@@ -14,9 +14,7 @@ function CTAPrincipal() {
     <section className="cta-principal">
       <div className="cta-container">
         <div className="cta-content">
-          <h2 className="cta-titulo">Viví la experiencia de 
-              La Quinta del Cholo
-          </h2>
+          <h2 className="cta-titulo">La Quinta del Cholo</h2>
           <p className="cta-texto">
             Elegí tu experiencia ideal: un refugio tranquilo para descansar o el escenario perfecto para tu celebración.
           </p>
@@ -25,18 +23,18 @@ function CTAPrincipal() {
               className="cta-boton"
               onClick={() => scrollToSection('alojamiento')}
             >
-              Reservar Alojamiento
+              Alojamiento
             </button>
             <button 
-              className="cta-boton"
+              className="cta-boton cta-boton--ghost"
               onClick={() => scrollToSection('eventos')}
             >
-              Reservar Evento
+              Eventos
             </button>
           </div>
         </div>
         <div className="cta-visuales">
-          <img src={PIC06871} alt="Piscina de La Quinta" />
+          <img src={PIC06871} alt="Ambientación La Quinta del Cholo" />
         </div>
       </div>
     </section>

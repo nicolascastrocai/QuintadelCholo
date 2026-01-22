@@ -170,7 +170,7 @@
 
 @media (max-width: 768px) {
   .alojamiento {
-    padding: 4rem 1.5rem;
+    padding: 4rem 0.75rem;
   }
 
   .alojamiento-card-hero-body {
@@ -179,5 +179,23 @@
 
   .fechas-grid {
     grid-template-columns: 1fr;
+  }
+
+  .alojamiento-hero {
+    padding: 3rem 0.5rem;
+  }
+
+  .alojamiento-hero-content,
+  .alojamiento-hero-card {
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .alojamiento-card-hero {
+    width: 100%;
+  }
+
+  .alojamiento-card-hero-media {
+    min-height: 240px;
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Alojamiento.css'
 import PIC06897 from '../../assets/PIC06897 (1) (1).jpg'
 
@@ -13,6 +13,18 @@ function Alojamiento() {
     imagen: PIC06897
   }
 
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 600px)')
+    const updateMatch = (event) => setIsMobile(event.matches)
+
+    setIsMobile(mq.matches)
+    mq.addEventListener('change', updateMatch)
+
+    return () => mq.removeEventListener('change', updateMatch)
+  }, [])
+
   const irAAirbnb = () => {
     window.open(AIRBNB_URL, '_blank')
   }
@@ -23,7 +35,7 @@ function Alojamiento() {
         <div className="alojamiento-hero-content">
           <span className="alojamiento-eyebrow">Alojamiento privado</span>
           <h2 className="alojamiento-hero-titulo">
-            Alojamiento en <span style={{ whiteSpace: 'nowrap' }}>La Quinta del Cholo</span>
+            Alojamiento en <span style={{ whiteSpace: isMobile ? 'normal' : 'nowrap' }}>La Quinta del Cholo</span>
           </h2>
           <p className="alojamiento-hero-texto">
             Un refugio en el corazón del campo, pensado para descansar, reconectar y disfrutar del tiempo sin apuro, rodeado de naturaleza y calma.

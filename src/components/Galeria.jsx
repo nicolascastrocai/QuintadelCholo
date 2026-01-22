@@ -203,7 +203,7 @@ function Galeria() {
         <div className="galeria-seccion">
           <h3 className="galeria-subtitulo">Alojamiento</h3>
           <div className="carrusel-wrapper-mini">
-            <button className="carrusel-btn-mini" onClick={anteriorAlojamiento}>‹</button>
+            <button className="carrusel-btn-mini carrusel-btn-mini--prev" onClick={anteriorAlojamiento}>‹</button>
             
             <div className="carrusel-mini">
               <div 
@@ -228,7 +228,7 @@ function Galeria() {
               </div>
             </div>
 
-            <button className="carrusel-btn-mini" onClick={siguienteAlojamiento}>›</button>
+            <button className="carrusel-btn-mini carrusel-btn-mini--next" onClick={siguienteAlojamiento}>›</button>
           </div>
         </div>
 
@@ -236,7 +236,7 @@ function Galeria() {
         <div className="galeria-seccion">
           <h3 className="galeria-subtitulo">Eventos</h3>
           <div className="carrusel-wrapper-mini">
-            <button className="carrusel-btn-mini" onClick={anteriorEventos}>‹</button>
+            <button className="carrusel-btn-mini carrusel-btn-mini--prev" onClick={anteriorEventos}>‹</button>
             
             <div className="carrusel-mini">
               <div 
@@ -283,7 +283,7 @@ function Galeria() {
               </div>
             </div>
 
-            <button className="carrusel-btn-mini" onClick={siguienteEventos}>›</button>
+            <button className="carrusel-btn-mini carrusel-btn-mini--next" onClick={siguienteEventos}>›</button>
           </div>
         </div>
       </div>
