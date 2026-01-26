@@ -16,8 +16,8 @@ import PIC07088_1 from '../../assets/alojamiento/PIC07088 (1).webp'
 import PIC07014 from '../../assets/alojamiento/PIC07014.webp'
 import PIC06839_1 from '../../assets/alojamiento/PIC06839 (1).jpg'
 import PIC06813 from '../../assets/alojamiento/PIC06813.webp'
-import Quinta105_2 from '../../assets/Eventos/Quinta 105 (2).webp'
-import Quinta108 from '../../assets/Eventos/Quinta 108.webp'
+import Dron2 from '../../assets/Eventos/Dron 2.jpg'
+import Quinta17 from '../../assets/Eventos/Quinta 17.jpg'
 import Quinta138 from '../../assets/Eventos/Quinta 138.webp'
 import Quinta15_1 from '../../assets/Eventos/Quinta 15 (1).webp'
 import Quinta152 from '../../assets/Eventos/Quinta 152.webp'
@@ -25,7 +25,7 @@ import Quinta159_1 from '../../assets/Eventos/Quinta 159 (1).webp'
 import Quinta16 from '../../assets/Eventos/Quinta 16.webp'
 import Quinta20_1 from '../../assets/Eventos/Quinta 20 (1).webp'
 import Quinta25_1 from '../../assets/Eventos/Quinta 25 (1).webp'
-import Quinta50 from '../../assets/Eventos/Quinta 50.webp'
+import Quinta117 from '../../assets/Eventos/Quinta 117.jpg'
 import Quinta67 from '../../assets/Eventos/Quinta 67.webp'
 import Quinta68_1 from '../../assets/Eventos/Quinta 68 (1).webp'
 import Quinta7_1 from '../../assets/Eventos/Quinta 7 (1).webp'
@@ -67,8 +67,8 @@ function Galeria() {
   ]
 
   const imagenesEventos = [
-    { id: 101, alt: 'Evento 1', src: Quinta105_2 },
-    { id: 102, alt: 'Evento 2', src: Quinta108 },
+    { id: 101, alt: 'Evento 1', src: Dron2 },
+    { id: 102, alt: 'Evento 2', src: Quinta17 },
     { id: 103, alt: 'Evento 3', src: Quinta138 },
     { id: 104, alt: 'Evento 4', src: Quinta15_1 },
     { id: 105, alt: 'Evento 5', src: Quinta152 },
@@ -76,7 +76,7 @@ function Galeria() {
     { id: 107, alt: 'Evento 7', src: Quinta16 },
     { id: 108, alt: 'Evento 8', src: Quinta20_1 },
     { id: 109, alt: 'Evento 9', src: Quinta25_1 },
-    { id: 110, alt: 'Evento 10', src: Quinta50 },
+    { id: 110, alt: 'Evento 10', src: Quinta117 },
     { id: 111, alt: 'Evento 11', src: Quinta67 },
     { id: 112, alt: 'Evento 12', src: Quinta68_1 },
     { id: 113, alt: 'Evento 13', src: Quinta7_1 },

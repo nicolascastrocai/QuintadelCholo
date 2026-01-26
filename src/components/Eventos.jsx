@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './Eventos.css'
-import EventoHero from '../../assets/Quinta 105 (1) (1).jpg'
+import EventoHero from '../../assets/Quinta 124.jpg'
 
 function Eventos({ onAgregarReserva }) {
   const hoy = new Date().toISOString().split('T')[0]

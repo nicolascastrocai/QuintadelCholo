@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import LogoHero from '../../assets/Gemini_Generated_Image_up0ukqup0ukqup0u (1).png'
+import TexturaTaco from '../../assets/textura2.jpg.jpg'
 
 function Hero() {
   return (
@@ -17,7 +18,7 @@ function Hero() {
         <div className="hero-overlay"></div>
       </div>
       
-      <div className="hero-cta-bar">
+      <div className="hero-cta-bar" style={{ backgroundImage: `url(${TexturaTaco})` }}>
         <div className="hero-cta-copy hero-cta-copy--wide">
           <p className="hero-cta-title">El alma del campo, hecha hogar</p>
           <p className="hero-cta-description hero-cta-description--large">

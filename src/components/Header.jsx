@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
-import LogoLaQuinta from '../../assets/WhatsApp Image 2026-01-16 at 18.40.01.jpeg'
+import LogoLaQuinta from '../../assets/logo horizontal.svg'
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)

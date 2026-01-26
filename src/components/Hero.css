@@ -50,6 +50,9 @@
   right: 0;
   width: 100%;
   background-color: #1a1a1a;
+  background-size: cover;
+  background-position: 0% 15%;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,18 +88,18 @@
 
 .hero-cta-title {
   font-family: var(--font-titulos);
-  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #f4f1eb;
+  color: #1a1a1a;
   margin-bottom: 0.25rem;
   line-height: 1.2;
 }
 
 .hero-cta-description {
   font-family: var(--font-ui);
-  font-size: 1.05rem;
-  color: rgba(244, 241, 235, 0.85);
+  font-size: 0.95rem;
+  color: rgba(26, 26, 26, 0.85);
   line-height: 1.6;
 }
 

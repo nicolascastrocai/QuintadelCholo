@@ -6,6 +6,7 @@ import CTAPrincipal from './components/CTAPrincipal'
 import Alojamiento from './components/Alojamiento'
 import Eventos from './components/Eventos'
 import Galeria from './components/Galeria'
+import Historia from './components/Historia'
 import Ubicacion from './components/Ubicacion'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
@@ -96,6 +97,7 @@ function App() {
           <Eventos onAgregarReserva={agregarReserva} />
           <Alojamiento />
           <Presentacion />
+          <Historia />
           <Galeria />
           <FAQ />
           <Ubicacion />

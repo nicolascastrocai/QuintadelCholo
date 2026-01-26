@@ -1,0 +1,112 @@
+.historia {
+  width: 100%;
+  background-color: var(--color-crudo);
+  padding: 10rem 3rem;
+}
+
+.historia-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.historia-imagen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historia-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.historia-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.historia-titulo {
+  font-family: var(--font-titulos);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: var(--color-negro);
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.historia-contenido {
+  background-image: url('../../assets/textura 1.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.historia-contenido p {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  color: var(--color-negro);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.historia-contenido p:last-child {
+  margin-bottom: 0;
+}
+
+.firma {
+  font-family: 'Allura', cursive !important;
+  font-size: 48px;
+  color: #3b3737;
+  background-color: transparent;
+  padding: 12px 0;
+  display: block;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 2.5rem;
+  text-align: right;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+@media (max-width: 968px) {
+  .historia {
+    padding: 6rem 2rem;
+  }
+  
+  .historia-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .historia-imagen {
+    order: 1;
+  }
+  
+  .historia-texto {
+    order: 2;
+  }
+  
+  .historia-contenido {
+    padding: 2rem 1.5rem;
+  }
+  
+  .historia-contenido p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
