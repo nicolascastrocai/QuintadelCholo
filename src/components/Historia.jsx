@@ -1,10 +1,13 @@
 import React from 'react'
 import './Historia.css'
 import HistoriaImagen from '../../assets/upscalemedia-transformed.jpeg'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function Historia() {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1, once: true })
+
   return (
-    <section id="historia" className="historia">
+    <section ref={ref} id="historia" className={`historia scroll-animate ${isVisible ? 'visible' : ''}`}>
       <div className="historia-container">
         <div className="historia-imagen">
           <img src={HistoriaImagen} alt="Historia de La Quinta del Cholo" />

@@ -1,7 +1,7 @@
 .ubicacion {
   width: 100%;
   background-color: var(--color-crudo);
-  padding: 10rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .ubicacion-container {
@@ -87,7 +87,7 @@
 
 @media (max-width: 968px) {
   .ubicacion {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
   }
   
   .ubicacion-container {

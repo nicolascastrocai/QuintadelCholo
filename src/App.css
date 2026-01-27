@@ -47,15 +47,11 @@
 }
 
 .heading-nowrap {
-  white-space: nowrap;
-}
-
-@media (max-width: 640px) {
-  .heading-nowrap {
-    white-space: normal;
-  }
+  white-space: normal;
 }
 
 h2 {
   margin-left: -5px;
+  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
+  line-height: 1.2;
 }

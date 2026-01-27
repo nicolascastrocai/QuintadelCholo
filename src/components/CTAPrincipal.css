@@ -1,143 +1,144 @@
 .cta-principal {
   width: 100%;
-  padding: 5rem 0;
+  padding: 5rem 3rem;
   background-color: var(--color-crudo);
 }
 
 .cta-container {
-  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 0;
-  align-items: stretch;
-  max-width: none;
-  margin: 0;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
 }
 
 .cta-content {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  background-color: var(--color-beige);
-  padding: 2.5rem 3rem;
-  border-radius: 0 20px 20px 0;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  gap: 1.5rem;
+  padding-right: 2rem;
 }
 
-.cta-visuales {
-  width: 100%;
-  display: flex;
-  align-items: stretch;
-}
-
-.cta-visuales img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0 20px 20px 0;
-  object-fit: cover;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
-  display: block;
+.cta-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-negro);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
 }
 
 .cta-titulo {
   font-family: var(--font-titulos);
-  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
   font-weight: 600;
   color: var(--color-negro);
   line-height: 1.2;
-  margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
 }
 
-.cta-texto {
+.cta-descripcion {
   font-family: var(--font-ui);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   color: var(--color-negro);
   line-height: 1.8;
   opacity: 0.85;
-  max-width: 600px;
+  max-width: 500px;
+}
+
+.cta-imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.cta-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-imagen:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.cta-imagen-1 {
+  min-height: 400px;
+  margin-top: 3rem;
+}
+
+.cta-imagen-2 {
+  min-height: 400px;
+  margin-top: -3rem;
 }
 
 .cta-botones {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .cta-boton {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 500;
   border: none;
-  padding: 1.2rem 3rem;
+  padding: 0.9rem 2rem;
   background-color: var(--color-negro);
   color: var(--color-crudo);
-  border-radius: 6px;
+  border-radius: 4px;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 .cta-boton:hover {
-  background-color: var(--color-crudo);
-  color: var(--color-negro);
-  box-shadow: inset 0 0 0 2px var(--color-negro);
+  background-color: #3b3737;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .cta-principal {
-    padding: 4rem 1rem;
+    padding: 3rem 2rem;
   }
-  
-  .cta-botones {
-    flex-direction: column;
-  }
-  
-  .cta-boton {
-    width: 100%;
-    text-align: center;
-  }
-}
 
-@media (max-width: 1024px) {
   .cta-container {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .cta-content {
-    border-radius: 0;
+    padding-right: 0;
   }
 
-  .cta-visuales img {
-    border-radius: 0 0 20px 20px;
-    min-height: 260px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cta-container {
-    width: 100%;
-    gap: 0;
+  .cta-imagenes {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .cta-content,
-  .cta-visuales {
-    width: 100%;
-  }
-
-  .cta-content {
-    border-radius: 0;
-    padding: 2.25rem 1.75rem;
-  }
-
-  .cta-visuales {
+  .cta-imagen-1,
+  .cta-imagen-2 {
+    min-height: 280px;
     margin-top: 0;
   }
 
-  .cta-visuales img {
-    border-radius: 0;
+  .cta-botones {
+    flex-direction: column;
+  }
+
+  .cta-boton {
     width: 100%;
-    height: auto;
-    min-height: 260px;
-    display: block;
+    text-align: center;
   }
 }

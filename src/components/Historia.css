@@ -1,7 +1,7 @@
 .historia {
   width: 100%;
   background-color: var(--color-crudo);
-  padding: 10rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .historia-container {
@@ -37,7 +37,7 @@
 
 .historia-titulo {
   font-family: var(--font-titulos);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
   font-weight: 600;
   color: var(--color-negro);
   letter-spacing: 0.5px;
@@ -85,7 +85,7 @@
 
 @media (max-width: 968px) {
   .historia {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
   }
   
   .historia-container {

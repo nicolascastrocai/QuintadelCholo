@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './FAQ.css'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function FAQ() {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1, once: true })
   const [activeIndex, setActiveIndex] = useState(null)
 
   const faqs = [
@@ -33,7 +35,7 @@ function FAQ() {
   }
 
   return (
-    <section className="faq">
+    <section ref={ref} id="faq" className={`faq scroll-animate ${isVisible ? 'visible' : ''}`}>
       <div className="faq-container">
         <h2 className="faq-titulo">Preguntas Frecuentes</h2>
         

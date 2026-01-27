@@ -91,7 +91,7 @@
   font-size: clamp(1.4rem, 2.8vw, 2.1rem);
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: #f4f1eb;
   margin-bottom: 0.25rem;
   line-height: 1.2;
 }
@@ -99,7 +99,7 @@
 .hero-cta-description {
   font-family: var(--font-ui);
   font-size: 0.95rem;
-  color: rgba(26, 26, 26, 0.85);
+  color: rgba(244, 241, 235, 0.9);
   line-height: 1.6;
 }
 

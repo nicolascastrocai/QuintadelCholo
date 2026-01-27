@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './Galeria.css'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import PIC06800_2 from '../../assets/alojamiento/PIC06800 (2).webp'
 import PIC06815 from '../../assets/alojamiento/PIC06815.webp'
 import PIC06871_2 from '../../assets/alojamiento/PIC06871 (2).webp'
@@ -34,6 +35,7 @@ import Quinta83 from '../../assets/Eventos/Quinta 83.webp'
 import EventoVideo from '../../assets/D&F (Final) (1).mp4'
 
 function Galeria() {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1, once: true })
   const [currentIndexAlojamiento, setCurrentIndexAlojamiento] = useState(0)
   const [currentIndexEventos, setCurrentIndexEventos] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -195,7 +197,7 @@ function Galeria() {
   const slideWidth = 100 / slidesToShow
 
   return (
-    <section id="galeria" className="galeria">
+    <section ref={ref} id="galeria" className={`galeria scroll-animate ${isVisible ? 'visible' : ''}`}>
       <div className="galeria-container">
         <h2 className="galeria-titulo">Galería</h2>
 

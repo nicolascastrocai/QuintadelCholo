@@ -1,15 +1,23 @@
 import React from 'react'
 import './Presentacion.css'
-import IMG0765 from '../../assets/PIC06918.webp'
+import ImagenPresentacion from '../../assets/PIC07074 (3) (1).webp'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import PIC07074 from '../../assets/PIC07074 (3) (1).webp'
+import IMG0765 from '../../assets/PIC06918.webp'
 
 function Presentacion() {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1, once: true })
+
   return (
-    <section className="presentacion">
+    <section ref={ref} className={`presentacion scroll-animate ${isVisible ? 'visible' : ''}`}>
       <div className="presentacion-container">
         <div className="presentacion-texto">
           <span className="presentacion-eyebrow">Conocé La Quinta del Cholo</span>
-          <h2 className="presentacion-titulo">Un lugar de encuentro, repleto de historia</h2>
+          <h2 className="presentacion-titulo">
+            Un lugar de encuentro, repleto
+            <br />
+             de historia
+          </h2>
           <p className="presentacion-parrafo">
             La Quinta del Cholo es una casona restaurada con más de un siglo de historia. Un espacio que combina la calidez 
             de lo familiar con la belleza de la naturaleza, ideal para descansar o celebrar 

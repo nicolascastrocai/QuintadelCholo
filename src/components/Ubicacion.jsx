@@ -1,10 +1,13 @@
 import React from 'react'
 import './Ubicacion.css'
 import MapaImagen from '../../assets/Gemini_Generated_Image_faq1jafaq1jafaq1.png'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function Ubicacion() {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1, once: true })
+
   return (
-    <section id="ubicacion" className="ubicacion">
+    <section ref={ref} id="ubicacion" className={`ubicacion scroll-animate ${isVisible ? 'visible' : ''}`}>
       <div className="ubicacion-container">
         <div className="ubicacion-texto">
           <h2 className="ubicacion-titulo">Ubicación</h2>
