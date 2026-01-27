@@ -22,23 +22,26 @@ function App() {
   const [introActive, setIntroActive] = useState(true)
   const [contentReady, setContentReady] = useState(false)
   const [logoVisible, setLogoVisible] = useState(false)
+  const INTRO_LOGO_DELAY = 500
+  const INTRO_TOTAL_DURATION = 7000
+  const INTRO_FADE_START = INTRO_TOTAL_DURATION - 800
 
   useEffect(() => {
     const logoTimer = setTimeout(() => {
       setLogoVisible(true)
-    }, 500)
+    }, INTRO_LOGO_DELAY)
 
     const contentTimer = setTimeout(() => {
       setContentReady(true)
-    }, 1400)
+    }, INTRO_TOTAL_DURATION)
 
     const fadeTimer = setTimeout(() => {
       setIntroActive(false)
-    }, 4200)
+    }, INTRO_FADE_START)
 
     const hideTimer = setTimeout(() => {
       setShowIntro(false)
-    }, 4800)
+    }, INTRO_TOTAL_DURATION)
 
     return () => {
       clearTimeout(logoTimer)
