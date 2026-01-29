@@ -1,7 +1,7 @@
 .eventos {
   width: 100%;
   background-color: #f5eee4;
-  padding: 0 0 130px 0;
+  padding: 0 0 200px 0;
 }
 
 .eventos-wrapper {
@@ -26,7 +26,6 @@
 .eventos-text-card {
   background: #f5eee4;
   padding: clamp(2.5rem, 4vw, 3.5rem);
-  border-radius: 20px;
   max-width: 480px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }

@@ -101,10 +101,10 @@ function App() {
           <Eventos onAgregarReserva={agregarReserva} />
           <Alojamiento />
           <Presentacion />
+          <Relleno /> 
           <Historia />
           <Galeria />
           <FAQ />
-          <Ubicacion />
           <Footer />
           <WhatsAppButton />
           <Carrito 

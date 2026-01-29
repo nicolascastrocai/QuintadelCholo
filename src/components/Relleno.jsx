@@ -1,6 +1,7 @@
 import React from 'react'
 import './Relleno.css'
 import ImagenRelleno from '../../assets/Eventos/Dron 2.jpg'
+import Socalo1 from '../../assets/Socalo 5.png'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function Relleno() {
@@ -12,9 +13,16 @@ function Relleno() {
         <img src={ImagenRelleno} alt="La Quinta del Cholo" className="relleno-imagen" />
       </div>
       
-      <div className="relleno-footer">
+      <div
+        className="relleno-footer"
+        style={{ backgroundImage: `url(${Socalo1})` }}
+      >
         <div className="relleno-contenido">
-          <h2 className="relleno-titulo">En La Quinta del Cholo, cada detalle cuenta.</h2>
+          <h2 className="relleno-titulo">
+            En La Quinta del Cholo,
+            <br />
+            cada detalle cuenta.
+          </h2>
           <p className="relleno-texto">
             Y así como celebramos momentos únicos, también abrimos nuestras puertas para quienes buscan detener el tiempo y conectar con lo esencial.
           </p>

@@ -55,3 +55,20 @@ h2 {
   font-size: clamp(1.3rem, 2.5vw, 2.2rem);
   line-height: 1.2;
 }
+
+/* Scroll animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-animate.visible.scroll-animate-delay {
+  transition-delay: 1.0s;
+}

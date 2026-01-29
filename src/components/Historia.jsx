@@ -18,17 +18,17 @@ function Historia() {
         <div className="historia-texto">
           <p>
             La Quinta del Cholo nació del sueño de crear un espacio donde la historia y la naturaleza se encuentran.
-            <br />
+            
             Un refugio que honra las raíces del campo santafesino, donde cada rincón cuenta una historia y cada momento invita a la contemplación.
           </p>
           <p>
             Desde sus orígenes, este lugar ha sido testigo de celebraciones, encuentros y momentos inolvidables.
-            <br />
+            
             Hoy, abre sus puertas para que nuevas historias se escriban entre sus paredes y bajo sus árboles centenarios.
           </p>
           <p>
             Un legado de tradición, hospitalidad y amor por la tierra que se transmite de generación en generación,
-            <br />
+            
             manteniendo vivo el espíritu del campo argentino.
           </p>
           <p className="historia-firma">

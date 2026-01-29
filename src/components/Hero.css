@@ -57,7 +57,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  padding: 1.5rem 5%;
+  padding: 1.0rem 1%;
   z-index: 12;
   box-shadow: 0 -5px 18px rgba(0, 0, 0, 0.45);
 }
@@ -100,19 +100,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.0rem;
   text-align: left;
 }
 
 
 .hero-cta-title {
   font-family: var(--font-titulos);
-  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--color-beige);
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.0;
   white-space: normal;
   text-align: left;
 }
@@ -124,10 +124,11 @@
 
 .hero-cta-description {
   font-family: var(--font-ui);
-  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
   color: var(--color-beige);
-  line-height: 1.55;
+  line-height: 1.5;
   margin: 0;
+  padding-top: 13px;
   font-weight: 300;
   text-align: left;
 }

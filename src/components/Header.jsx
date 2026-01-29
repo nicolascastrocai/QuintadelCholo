@@ -52,11 +52,11 @@ function Header() {
         </button>
 
         <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
-          <a onClick={() => scrollToSection('alojamiento')}>Alojamiento</a>
           <a onClick={() => scrollToSection('eventos')}>Eventos</a>
+          <a onClick={() => scrollToSection('alojamiento')}>Alojamiento</a>
+          <a onClick={() => scrollToSection('historia')}>Historia</a>
           <a onClick={() => scrollToSection('galeria')}>Galería</a>
-          <a onClick={() => scrollToSection('ubicacion')}>Ubicación</a>
-          <a onClick={() => scrollToSection('contacto')}>Contacto</a>
+          <a onClick={() => scrollToSection('contacto')}>Ubicación</a>
         </nav>
       </div>
     </header>

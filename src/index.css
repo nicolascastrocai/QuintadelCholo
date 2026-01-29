@@ -40,7 +40,7 @@ button {
 
 
 .scroll-animate-delay {
-  transition-delay: 0.0;
+  transition-delay: 3.4;
 }
 
 @keyframes fadeInUp {

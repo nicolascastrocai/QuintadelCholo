@@ -22,6 +22,8 @@
   height: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0.32rem 0 0.08rem 0; /* baja el logo ~2px */
 }
 
 .header-logo img {
@@ -29,9 +31,10 @@
   width: auto;
   display: block;
   object-fit: contain;
-  transform: scale(2.45);
+  transform: scale(2.70);
   transform-origin: left center;
   max-height: 100px;
+  justify-content: center;
 }
 
 .header-nav {

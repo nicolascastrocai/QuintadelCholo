@@ -27,7 +27,7 @@
 .relleno-footer {
   width: 100%;
   background-color: #1a1a1a;
-  padding: 2.25rem 3rem;
+  padding: 1.95rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,24 +35,24 @@
 
 .relleno-contenido {
   max-width: 1000px;
-  width: 90%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.9rem;
   text-align: left;
 }
 
 .relleno-titulo {
   font-family: var(--font-titulos);
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.4rem, 2.3vw, 2.1rem);
   font-weight: 500;
-  color: #f4f1eb;
+  color: var(--color-beige);
   line-height: 1.1;
   letter-spacing: 0.3px;
   margin: 0;
-  text-align: center;
+  text-align: right;
   min-width: fit-content;
 }
 
@@ -60,12 +60,13 @@
   font-family: var(--font-ui);
   font-size: 0.85rem;
   font-weight: 300;
-  color: #f4f1eb;
+  color: var(--color-beige);
   line-height: 1.6;
   opacity: 0.9;
   margin: 0;
-  max-width: 450px;
+  max-width: 350px;
   text-align: left;
+  padding-top: 15px;
 }
 
 @media (max-width: 968px) {

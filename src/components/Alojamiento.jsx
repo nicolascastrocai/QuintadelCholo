@@ -42,10 +42,10 @@ function Alojamiento() {
       <div className="alojamiento-wrapper">
         <div className="alojamiento-background">
           <div className="alojamiento-text-content">
-            <span className="alojamiento-eyebrow">Eventos privados</span>
-            <h2 className="alojamiento-titulo">Celebrá en La Quinta del Cholo</h2>
+            <span className="alojamiento-eyebrow">Alojamiento privado</span>
+            <h2 className="alojamiento-titulo"> Vení a disfrutar del alojamiento en La Quinta del Cholo</h2>
             <p className="alojamiento-texto">
-              Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.
+              Un refugio en el corazón del campo, pensado para descansar, reconectar y disfrutar del tiempo sin apuro, rodeado de naturaleza y calma
             </p>
           </div>
         </div>
