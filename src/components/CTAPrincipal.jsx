@@ -1,7 +1,6 @@
 import React from 'react'
 import './CTAPrincipal.css'
-import ImagenCTA1 from '../../assets/alojamiento/PIC06815.webp'
-import ImagenCTA2 from '../../assets/alojamiento/PIC06954 (1).webp'
+import CTAImagen from '../../assets/PIC06871.webp'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function CTAPrincipal() {
@@ -16,31 +15,23 @@ function CTAPrincipal() {
 
   return (
     <section ref={ref} className={`cta-principal scroll-animate ${isVisible ? 'visible' : ''}`}>
-      <div className="cta-container">
-        <div className="cta-content">
-          <p className="cta-eyebrow"></p>
-          <h2 className="cta-titulo">La Quinta del Cholo</h2>
-          <p className="cta-descripcion">
-            Elegí tu experiencia ideal: un refugio tranquilo para descansar o el escenario perfecto para tu celebración.
+      <div className="cta-wrapper">
+        <div className="cta-card">
+          <h2 className="cta-card-title">La Quinta del Cholo</h2>
+          <p className="cta-card-description">
+            Elegí tu experiencia ideal: Un refugio tranquilo para descansar o el escenario perfecto para tu celebración.
           </p>
-          <div className="cta-botones">
-            <button 
-              className="cta-boton"
-              onClick={() => scrollToSection('alojamiento')}
-            >
+          <div className="cta-card-buttons">
+            <button className="cta-card-button" onClick={() => scrollToSection('alojamiento')}>
               Alojamiento
             </button>
-            <button 
-              className="cta-boton"
-              onClick={() => scrollToSection('eventos')}
-            >
+            <button className="cta-card-button" onClick={() => scrollToSection('eventos')}>
               Eventos
             </button>
           </div>
         </div>
-        <div className="cta-imagenes">
-          <img src={ImagenCTA1} alt="Interior La Quinta del Cholo" className="cta-imagen cta-imagen-1" />
-          <img src={ImagenCTA2} alt="Habitación La Quinta del Cholo" className="cta-imagen cta-imagen-2" />
+        <div className="cta-image-frame">
+          <img src={CTAImagen} alt="Vista de La Quinta del Cholo" />
         </div>
       </div>
     </section>

@@ -99,7 +99,6 @@ function App() {
           <Hero />
           <CTAPrincipal />
           <Eventos onAgregarReserva={agregarReserva} />
-          <Relleno />
           <Alojamiento />
           <Presentacion />
           <Historia />

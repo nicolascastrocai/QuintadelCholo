@@ -1,276 +1,174 @@
 
+
 .alojamiento {
   width: 100%;
-  background-color: var(--color-crudo);
-  padding: 3rem 0;
+  background-color: #1b1b1b;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
 }
 
-.alojamiento-container {
-  max-width: 1400px;
-  margin: 0 auto;
+.alojamiento-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 600px;
-  align-items: stretch;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
 }
 
-.alojamiento-panel {
-  background-color: var(--color-crudo);
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.alojamiento-background {
   position: relative;
-}
-
-.alojamiento-panel-content {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 620px;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4rem);
 }
 
-.alojamiento-card-inline {
-  display: none;
+.alojamiento-text-content {
+  position: relative;
+  max-width: 500px;
+  color: var(--color-beige);
+  z-index: 1;
+}
+
+
+.alojamiento-card-media {
   width: 100%;
-  margin-top: 1.5rem;
+  height: 150px;
+  object-fit: cover;
+  display: block;
 }
 
 .alojamiento-eyebrow {
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
+  color: var(--color-beige);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.18em;
+  margin-bottom: 1rem;
+  display: block;
 }
 
-.alojamiento-hero-titulo {
+.alojamiento-titulo {
   font-family: var(--font-titulos);
-  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
-  color: var(--color-negro);
+  font-size: clamp(2.2rem, 3.6vw, 3.2rem);
+  color: var(--color-beige);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
 }
 
-.alojamiento-hero-texto {
+.alojamiento-texto {
   font-family: var(--font-ui);
   font-size: 1rem;
+  font-weight: 300;
+  color: rgba(224, 212, 192, 0.9);
   line-height: 1.7;
-  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  max-width: 350px;
 }
 
-.alojamiento-cta-btn {
-  align-self: flex-start;
-  font-family: var(--font-ui);
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.9rem 2.5rem;
-  background-color: var(--color-negro);
-  color: var(--color-crudo);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.alojamiento-cta-btn:hover {
-  background-color: var(--color-crudo);
-  color: var(--color-negro);
-  transform: translateY(-2px);
-  box-shadow: inset 0 0 0 2px var(--color-negro);
-}
-
-.alojamiento-imagenes-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  height: 100%;
+.alojamiento-card-panel {
+  background: transparent;
+  display: flex;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 3.5rem);
 }
 
-.alojamiento-imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.alojamiento-imagen:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-}
-
-.alojamiento-imagen-1 {
-  min-height: 400px;
-  margin-top: 3rem;
-}
-
-.alojamiento-imagen-2 {
-  min-height: 400px;
-  margin-top: -3rem;
-}
-
-.alojamiento-card-hero {
-  background: white;
-  border-radius: 18px;
+.alojamiento-card {
+  background-color: #ffffff;
   overflow: hidden;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  max-width: none;
-}
-
-.alojamiento-card-hero-media {
-  min-height: 320px;
-  background-size: cover;
-  background-position: center;
-}
-
-.alojamiento-card-hero-body {
-  padding: 2.5rem;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+  width: min(100%, 430px);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
-.alojamiento-card-nombre {
+.alojamiento-card-body {
+  padding: clamp(1.2rem, 2vw, 1.6rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.alojamiento-card-titulo {
   font-family: var(--font-titulos);
-  font-size: 1.8rem;
-  color: var(--color-negro);
+  font-size: clamp(1.5rem, 2.3vw, 1.8rem);
+  font-weight: 500;
+  color: #161514;
+  margin: 0 0 0.7rem 0;
 }
 
 .alojamiento-card-descripcion {
   font-family: var(--font-ui);
-  font-size: 1rem;
-  line-height: 1.7;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.alojamiento-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.fechas-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.fechas-grid > div {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form-group label {
-  font-family: var(--font-ui);
   font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-negro);
+  color: #433c34;
+  opacity: 0.85;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.6;
 }
 
-.form-group input {
+.alojamiento-card-btn {
   font-family: var(--font-ui);
-  font-size: 1rem;
-  padding: 0.9rem 1.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: var(--color-crudo);
-  color: var(--color-negro);
-  transition: border-color 0.2s ease;
-}
-
-.form-group input:focus {
-  outline: none;
-  border-color: var(--color-negro);
-}
-
-.form-group input::placeholder {
-  color: rgba(26, 26, 26, 0.4);
-}
-
-.alojamiento-btn {
-  font-family: var(--font-ui);
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  padding: 1rem 2rem;
-  background-color: var(--color-negro);
-  color: var(--color-crudo);
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  margin-top: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  background-color: #161514;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: auto;
+  align-self: flex-start;
 }
 
-.alojamiento-btn:hover {
-  background-color: var(--color-crudo);
-  color: var(--color-negro);
-  box-shadow: inset 0 0 0 2px var(--color-negro);
+.alojamiento-card-btn:hover {
+  background-color: #2b2926;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Remove legacy styles below */
 
 @media (max-width: 1024px) {
-  .alojamiento-container {
+  .alojamiento-wrapper {
     grid-template-columns: 1fr;
-    min-height: auto;
+    height: auto;
   }
 
-  .alojamiento-imagenes-wrapper {
-    display: none;
+  .alojamiento-background {
+    min-height: 60vh;
   }
 
-  .alojamiento-card-inline {
-    display: block;
-  }
-
-  .alojamiento-panel .alojamiento-cta-btn {
-    display: none;
-  }
-
-  .alojamiento-card-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .alojamiento-card-hero-media {
-    min-height: 260px;
+  .alojamiento-card-panel {
+    padding: 3rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .alojamiento {
-    padding: 2rem 0;
+  .alojamiento-background {
+    min-height: 50vh;
+    padding: 2.5rem 1.5rem;
   }
 
-  .alojamiento-panel {
+  .alojamiento-card-panel {
     padding: 2rem 1.5rem;
   }
 
-  .alojamiento-panel-content {
-    max-width: none;
+  .alojamiento-card {
+    border-radius: 20px;
   }
 
-  .alojamiento-card-hero-body {
-    padding: 2rem;
+  .alojamiento-card-media {
+    height: 160px;
   }
 
-  .fechas-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .alojamiento-card-hero {
-    width: 100%;
-  }
-
-  .alojamiento-card-hero-media {
-    min-height: 240px;
+  .alojamiento-card-body {
+    padding: 1.5rem;
   }
 }

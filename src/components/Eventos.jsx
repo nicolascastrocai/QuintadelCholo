@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './Eventos.css'
-import EventoHero from '../../assets/Quinta 124.jpg'
-import EventoImagen from '../../assets/Eventos/Quinta 152.webp'
+import EventoBackground from '../../assets/PIC06871.webp'
+import EventoFormImagen from '../../assets/Quinta 124.jpg'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function Eventos({ onAgregarReserva }) {
@@ -10,7 +10,7 @@ function Eventos({ onAgregarReserva }) {
     id: 'evento-general',
     nombre: 'Evento',
     descripcion: 'Contanos cómo imaginás tu celebración y lo organizamos junto a vos',
-    imagen: EventoHero
+    imagen: EventoFormImagen
   }
 
   const [formData, setFormData] = useState({})
@@ -60,7 +60,7 @@ function Eventos({ onAgregarReserva }) {
 
   const FormFields = () => (
     <>
-      <h3 className="evento-form-titulo">Cotizá tu evento</h3>
+      <h3 className="evento-form-titulo">{evento.nombre}</h3>
       <p className="evento-form-descripcion">{evento.descripcion}</p>
 
       <div className="evento-form">
@@ -98,7 +98,7 @@ function Eventos({ onAgregarReserva }) {
           className="evento-btn"
           onClick={handleAgregar}
         >
-          Enviar solicitud
+          Cotizá tu evento
         </button>
       </div>
     </>
@@ -106,55 +106,28 @@ function Eventos({ onAgregarReserva }) {
 
   return (
     <section ref={ref} id="eventos" className={`eventos scroll-animate ${isVisible ? 'visible' : ''}`}>
-      <div className="eventos-container">
-        <div className="eventos-panel">
-          <div className="eventos-panel-content">
+      <div className="eventos-wrapper">
+        <div className="eventos-background" style={{ backgroundImage: `url(${EventoBackground})` }}>
+          <div className="eventos-text-card">
             <span className="eventos-eyebrow">Eventos privados</span>
             <h2 className="eventos-titulo">Celebrá en La Quinta del Cholo</h2>
             <p className="eventos-texto">
-Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.            </p>
-            <button className="eventos-cta-btn" onClick={() => setShowForm(!showForm)}>
-              Eventos
-            </button>
-          </div>
-
-          <div className="eventos-form-inline">
-            <div className="eventos-form-card eventos-form-card--inline">
-              <div
-                className="eventos-form-card-media"
-                style={{ backgroundImage: `url("${evento.imagen}")` }}
-              />
-              <div className="eventos-form-card-body">
-                <FormFields />
-              </div>
-            </div>
+              Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.
+            </p>
           </div>
         </div>
-
-        <div className="eventos-imagen-wrapper">
-          <img src={EventoImagen} alt="Celebrá en Aguaverde" className="eventos-imagen" />
+        <div className="eventos-form-panel">
+          <div className="eventos-form-card">
+            <div
+              className="eventos-form-card-media"
+              style={{ backgroundImage: `url(${evento.imagen})` }}
+            />
+            <div className="eventos-form-card-body">
+              <FormFields />
+            </div>
+          </div>
         </div>
       </div>
-
-      {showForm && (
-        <>
-          <div className="eventos-modal-backdrop" onClick={() => setShowForm(false)} />
-          <div className="eventos-form-modal">
-            <div className="eventos-form-card">
-              <button className="eventos-form-close" onClick={() => setShowForm(false)}>
-                ×
-              </button>
-              <div
-                className="eventos-form-card-media"
-                style={{ backgroundImage: `url("${evento.imagen}")` }}
-              />
-              <div className="eventos-form-card-body">
-                <FormFields />
-              </div>
-            </div>
-          </div>
-        </>
-      )}
     </section>
   )
 }
