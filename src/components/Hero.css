@@ -101,14 +101,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  
   text-align: center;
 }
 
 
 .hero-cta-title {
   font-family: var(--font-titulos);
-  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--color-beige);
@@ -119,13 +119,13 @@
 
 .hero-cta-description {
   font-family: var(--font-ui);
-  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  font-size: clamp(0.85rem, 0.95vw, 2.05rem);
   color: var(--color-beige);
   line-height: 1.6;
   margin: 0;
-  font-weight: 300;
+  font-weight: 100;
   text-align: center;
-  max-width: 650px;
+  max-width: 700px;
 }
 
 .hero-cta-eyebrow {

@@ -26,8 +26,7 @@ function Hero() {
             Un refugio de recuerdos.
           </h2>
           <p className="hero-cta-description">
-            Un espacio donde la historia se encuentra con la naturaleza,<br />
-            y cada rincón invita al descanso y la celebración.
+            Un espacio donde la historia se encuentra con la naturaleza, y cada rincón invita al descanso y la celebración.
           </p>
         </div>
         <div className="hero-cta-icon hero-cta-icon--right">

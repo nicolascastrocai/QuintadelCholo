@@ -12,6 +12,8 @@
   grid-template-columns: 1fr 1.2fr 1fr;
   gap: 5rem;
   align-items: start;
+  border-top: 2px solid rgba(244, 241, 235, 0.65);
+  padding-top: 2.5rem;
 }
 
 .footer-column {
