@@ -9,7 +9,7 @@ function Eventos({ onAgregarReserva }) {
   const evento = {
     id: 'evento-general',
     nombre: 'Evento',
-    descripcion: 'Contanos cómo imaginás tu celebración y <br /> lo organizamos junto a vos',
+    descripcion: 'Contanos cómo imaginás tu celebración <br /> y  lo organizamos junto a vos',
     imagen: EventoFormImagen
   }
 
