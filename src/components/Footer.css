@@ -86,7 +86,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.95rem;
+  gap: 1.15rem;
   justify-content: space-between;
   height: 100%;
 }
@@ -104,14 +104,26 @@
   color: inherit;
   text-transform: lowercase;
   letter-spacing: 0.02em;
-  font-size: 25px;
+  font-size: 22px;
   font-family: var(--font-titulos);
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.1;
   cursor: pointer;
   padding: 0;
   text-align: left;
   transition: opacity 0.2s ease;
+}
+
+@media (min-width: 1700px) {
+  .footer-column--nav li {
+    font-size: 25px;
+  }
+
+  .footer-column--nav a,
+  .footer-column--nav button {
+    font-size: 25px;
+    line-height: 1.05;
+  }
 }
 
 .footer-column--nav a:hover,

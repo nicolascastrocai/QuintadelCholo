@@ -47,7 +47,7 @@ function Alojamiento() {
               Vení a disfrutar del alojamiento en La&nbsp;Quinta&nbsp;del&nbsp;Cholo
             </h2>
             <p className="alojamiento-texto">
-              Un refugio en el corazón del campo, pensado para descansar, reconectar y disfrutar del tiempo sin apuro, rodeado de naturaleza y calma
+              Un refugio en el corazón del campo, pensado para descansar, reconectar y disfrutar del tiempo sin apuro, rodeado de naturaleza y calma.
             </p>
           </div>
         </div>
