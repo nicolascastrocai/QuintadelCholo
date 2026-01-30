@@ -29,7 +29,7 @@ function Footer() {
 
         <div className="footer-column footer-column--map">
           <a
-            href="https://maps.app.goo.gl/WqTF971wwd04V8PY6"
+            href="https://www.google.com/maps/place/La+Quinta+del+Cholo/@-33.1206303,-60.5399497,17z/data=!3m1!4b1!4m6!3m5!1s0x95b709fa5ce734ab:0x2baa37198ae32bce!8m2!3d-33.1206348!4d-60.5373748!16s%2Fg%2F11ssxd23mn?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Abrir mapa en Google Maps"
@@ -41,7 +41,7 @@ function Footer() {
 
         <div className="footer-column footer-column--info">
           <div className="footer-info-block">
-            <h4>ubicación</h4>
+            <h4>UBICACIÓN</h4>
             <p>
               Estancia La Quinta<br />
               Av. del Rosario 539<br />
@@ -49,7 +49,7 @@ function Footer() {
             </p>
           </div>
           <div className="footer-info-block">
-            <h4>seguinos</h4>
+            <h4>SEGUINOS</h4>
             <a
               href="https://www.instagram.com/laquintadelcholo?igsh=M3ZtNW0zOTIyMmxt"
               target="_blank"
