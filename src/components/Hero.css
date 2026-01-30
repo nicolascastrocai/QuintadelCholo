@@ -101,7 +101,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
   text-align: center;
 }
 
@@ -119,7 +118,7 @@
 
 .hero-cta-description {
   font-family: var(--font-ui);
-  font-size: clamp(0.85rem, 0.95vw, 2.05rem);
+  font-size: clamp(13px, 13px, 16px);
   color: var(--color-beige);
   line-height: 2.3;
   margin: 0;

@@ -20,6 +20,7 @@
   align-items: center;
   gap: 3rem;
   z-index: 1;
+  padding-bottom: 50px;
 }
 
 .presentacion-descripcion {
@@ -27,7 +28,7 @@
   font-size: clamp(1rem, 1.8vw, 1.25rem);
   font-weight: 400;
   color: #1A1A1A;
-  line-height: 1.65;
+  line-height: 1.25;
   margin: 0 auto;
   max-width: 820px;
 }

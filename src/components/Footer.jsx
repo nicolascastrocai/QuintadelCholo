@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import FooterMap from '../../assets/ChatGPT Image 29 ene 2026, 06_41_26 p.m..png'
 import FooterLogo from '../../assets/logo.svg'
+import IsoLogo from '../../assets/iso.svg'
 
 function Footer() {
   const scrollToTop = () => {
@@ -10,16 +11,19 @@ function Footer() {
 
   return (
     <footer id="contacto" className="footer">
+      <div className="footer-border-container">
+        <div className="footer-border-line"></div>
+        <img src={IsoLogo} alt="" className="footer-border-logo" />
+      </div>
       <div className="footer-layout">
         <nav className="footer-column footer-column--nav">
-          <h4>Navegación</h4>
           <ul>
-            <li><button onClick={scrollToTop}>Inicio</button></li>
-            <li><a href="#alojamiento">Alojamiento</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><button onClick={scrollToTop}>inicio</button></li>
+            <li><a href="#alojamiento">alojamiento</a></li>
+            <li><a href="#eventos">eventos</a></li>
+            <li><a href="#galeria">galería</a></li>
+            <li><a href="#historia">historia</a></li>
+            <li><a href="#contacto">contacto</a></li>
           </ul>
         </nav>
 
@@ -37,7 +41,7 @@ function Footer() {
 
         <div className="footer-column footer-column--info">
           <div className="footer-info-block">
-            <h4>Ubicación</h4>
+            <h4>ubicación</h4>
             <p>
               Estancia La Quinta<br />
               Av. del Rosario 539<br />
@@ -45,7 +49,7 @@ function Footer() {
             </p>
           </div>
           <div className="footer-info-block">
-            <h4>Seguinos</h4>
+            <h4>seguinos</h4>
             <a
               href="https://www.instagram.com/laquintadelcholo?igsh=M3ZtNW0zOTIyMmxt"
               target="_blank"

@@ -9,7 +9,7 @@ function Eventos({ onAgregarReserva }) {
   const evento = {
     id: 'evento-general',
     nombre: 'Evento',
-    descripcion: 'Contanos cómo imaginás tu celebración y lo organizamos junto a vos',
+    descripcion: 'Contanos cómo imaginás tu celebración y <br /> lo organizamos junto a vos',
     imagen: EventoFormImagen
   }
 
@@ -61,7 +61,7 @@ function Eventos({ onAgregarReserva }) {
   const FormFields = () => (
     <>
       <h3 className="evento-form-titulo">{evento.nombre}</h3>
-      <p className="evento-form-descripcion">{evento.descripcion}</p>
+      <p className="evento-form-descripcion" dangerouslySetInnerHTML={{ __html: evento.descripcion }}></p>
 
       <div className="evento-form">
         <div className="form-group">
@@ -114,7 +114,7 @@ function Eventos({ onAgregarReserva }) {
               Celebrá en La&nbsp;Quinta&nbsp;del&nbsp;Cholo
             </h2>
             <p className="eventos-texto">
-              Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.
+              Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables <br /> en tus celebraciones más importantes.
             </p>
           </div>
         </div>
