@@ -1,7 +1,7 @@
 import React from 'react'
 import './Relleno.css'
 import ImagenRelleno from '../../assets/Eventos/Dron 2.jpg'
-import Socalo1 from '../../assets/Socalo 5.png'
+import Socalo1 from '../../assets/Socalo 1.png'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function Relleno() {

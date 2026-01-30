@@ -54,7 +54,7 @@
 
 .alojamiento-titulo {
   font-family: var(--font-titulos);
-  font-size: clamp(2.2rem, 3.6vw, 3.2rem);
+  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
   color: var(--color-beige);
   margin-bottom: 1.2rem;
   line-height: 1.15;

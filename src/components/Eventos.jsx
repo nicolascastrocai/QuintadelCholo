@@ -110,7 +110,9 @@ function Eventos({ onAgregarReserva }) {
         <div className="eventos-background" style={{ backgroundImage: `url(${EventoBackground})` }}>
           <div className="eventos-text-card">
             <span className="eventos-eyebrow">Eventos privados</span>
-            <h2 className="eventos-titulo">Celebrá en La Quinta del Cholo</h2>
+            <h2 className="eventos-titulo">
+              Celebrá en La&nbsp;Quinta&nbsp;del&nbsp;Cholo
+            </h2>
             <p className="eventos-texto">
               Un espacio versátil rodeado de naturaleza, perfecto para crear recuerdos inolvidables en tus celebraciones más importantes.
             </p>

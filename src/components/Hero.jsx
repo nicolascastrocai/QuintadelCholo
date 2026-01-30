@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import LogoHero from '../../assets/Gemini_Generated_Image_up0ukqup0ukqup0u (1).png'
 import SocaloTexture from '../../assets/Socalo 1.png'
+import TextoSVG from '../../assets/texto.svg'
 
 function Hero() {
   return (
@@ -22,16 +23,19 @@ function Hero() {
         <div className="hero-cta-icon hero-cta-icon--left">
         </div>
         <div className="hero-cta-content">
-          <h2 className="hero-cta-title">
-            El alma del campo,
-            <br />
-            <span className="hero-cta-title-secondary">hecha hogar</span>
-          </h2>
-          <p className="hero-cta-description">
-            Un espacio donde la historia se encuentra<br />
-            con la naturaleza, y cada rincón invita al<br />
-            descanso y la celebración.
-          </p>
+          <div className="hero-cta-text-wrapper">
+            <h2 className="hero-cta-title">
+              El alma del campo,
+              <br />
+              <span className="hero-cta-title-secondary">hecha hogar</span>
+            </h2>
+            <p className="hero-cta-description">
+              Un espacio donde la historia se encuentra<br />
+              con la naturaleza, y cada rincón invita al<br />
+              descanso y la celebración.
+            </p>
+          </div>
+          <img src={TextoSVG} alt="" className="hero-cta-texto-svg" />
         </div>
         <div className="hero-cta-icon hero-cta-icon--right">
           

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import FooterMap from '../../assets/ChatGPT Image 29 ene 2026, 06_41_26 p.m..png'
+import FooterLogo from '../../assets/logo.svg'
 
 function Footer() {
   const scrollToTop = () => {
@@ -62,12 +63,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer-branding">
-        <span className="footer-est">EST. 1920</span>
-        <button className="footer-logo-button" onClick={scrollToTop}>
-          LA QUINTA DEL CHOLO
-        </button>
-        <p className="footer-signature">un refugio de recuerdos</p>
+      <div className="footer-branding" onClick={scrollToTop}>
+        <img src={FooterLogo} alt="La Quinta del Cholo" className="footer-logo-img" />
       </div>
     </footer>
   )

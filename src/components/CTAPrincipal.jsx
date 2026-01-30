@@ -1,7 +1,7 @@
 import React from 'react'
 import './CTAPrincipal.css'
-import ImagenCTA1 from '../../assets/alojamiento/PIC06815.webp'
-import ImagenCTA2 from '../../assets/alojamiento/PIC06954 (1).webp'
+import ImagenCTA1 from '../../assets/PIC07072 (1).jpg'
+import ImagenCTA2 from '../../assets/PIC06833 (2).jpg'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function CTAPrincipal() {

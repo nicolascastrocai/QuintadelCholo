@@ -80,7 +80,8 @@
 
 .cta-imagen-2 {
   min-height: 400px;
-  margin-top: -3rem;
+  margin-top: 0;
+  justify-self: center;
 }
 
 .cta-botones {
