@@ -42,7 +42,6 @@ function Footer() {
             <div className="footer-mobile-card__image">
               <img src={FooterMap} alt="Ubicación" />
             </div>
-            <button className="footer-mobile-card__button">Suscribirse</button>
             <ul className="footer-mobile-card__contact">
               <li>+54 9 341 744 7516</li>
               <li><a href="mailto:info@laquintadelcholo.com">info@laquintadelcholo.com</a></li>
