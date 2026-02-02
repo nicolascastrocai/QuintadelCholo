@@ -184,25 +184,110 @@
 
 
 
-@media (max-width: 900px) {
+/* Mobile card styles */
+.footer-mobile-card {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .footer {
-    padding: 3rem 1.5rem 2rem;
+    padding: 2rem 1.2rem 1.5rem;
+  }
+
+  .footer-border-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-border-logo {
+    width: 50px;
+    height: 50px;
   }
 
   .footer-layout {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
   }
 
-  .footer-column--nav ul,
-  .footer-column--nav li,
+  .footer-column--nav ul {
+    gap: 0.7rem;
+  }
+
+  .footer-column--nav li {
+    font-size: 14px;
+  }
+
   .footer-column--nav a,
   .footer-column--nav button {
-    align-items: center;
-    text-align: center;
+    font-size: 14px;
+    text-align: left;
   }
 
   .footer-column--map {
-    order: -1;
+    order: 0;
+  }
+
+  .footer-column--map .footer-map-link {
+    display: none;
+  }
+
+  .footer-mobile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .footer-mobile-card__image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .footer-mobile-card__image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .footer-mobile-card__button {
+    border: 1px solid rgba(244, 241, 235, 0.7);
+    background: transparent;
+    color: #f4f1eb;
+    border-radius: 999px;
+    padding: 0.4rem 1.2rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  .footer-mobile-card__contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    text-align: center;
+    opacity: 0.85;
+  }
+
+  .footer-mobile-card__contact a {
+    color: inherit;
+  }
+
+  .footer-column--info {
+    display: none;
+  }
+
+  .footer-branding {
+    margin-top: 1.5rem;
+  }
+
+  .footer-logo-img {
+    transform: scale(1.5);
   }
 }

@@ -18,10 +18,15 @@ body {
   color: var(--color-negro);
   background-color: var(--color-crudo);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 a {

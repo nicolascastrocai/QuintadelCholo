@@ -151,6 +151,10 @@
 }
 
 @media (max-width: 768px) {
+  .alojamiento {
+    padding: 2px 16px 20px;
+  }
+
   .alojamiento-background {
     min-height: 50vh;
     padding: 2.5rem 1.5rem;

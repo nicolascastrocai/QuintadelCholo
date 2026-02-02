@@ -55,6 +55,8 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .header-toggle span {
@@ -109,15 +111,33 @@
     padding: 0.9rem 1.5rem;
   }
 
+  .header-logo {
+    height: 32px;
+  }
+
+  .header-logo img {
+    transform: scale(2.2);
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    transform: scale(2.40);
+    transform-origin: left center;
+    max-height: 100px;
+    justify-content: center;
+    
+  }
+  
+
   .header-nav {
     position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    top: 10%;
+    left: 5;
+    right: 100;
     background-color: var(--color-beige);
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
     display: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;

@@ -37,6 +37,18 @@ function Footer() {
           >
             <img src={FooterMap} alt="Mapa de La Quinta del Cholo" />
           </a>
+
+          <div className="footer-mobile-card">
+            <div className="footer-mobile-card__image">
+              <img src={FooterMap} alt="Ubicación" />
+            </div>
+            <button className="footer-mobile-card__button">Suscribirse</button>
+            <ul className="footer-mobile-card__contact">
+              <li>+54 9 341 744 7516</li>
+              <li><a href="mailto:info@laquintadelcholo.com">info@laquintadelcholo.com</a></li>
+              <li>General Lagos, Santa Fe</li>
+            </ul>
+          </div>
         </div>
 
         <div className="footer-column footer-column--info">

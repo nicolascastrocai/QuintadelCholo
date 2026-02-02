@@ -64,6 +64,10 @@
 
 @media (max-width: 768px) {
   .presentacion {
+    display: none;
+  }
+
+  .presentacion {
     padding: 1.5rem;
   }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Historia.css'
-import Socalo4 from '../../assets/Socalo 4.png'
+import HistoriaImagen from '../../assets/PIC06918.webp'
+import HistoriaTextura from '../../assets/textura 1.jpg.jpg'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 function Historia() {
@@ -11,8 +12,12 @@ function Historia() {
       ref={ref} 
       id="historia" 
       className={`historia scroll-animate ${isVisible ? 'visible' : ''}`}
-      style={{ backgroundImage: `url(${Socalo4})` }}
+      style={{ '--historia-textura': `url(${HistoriaTextura})` }}
     >
+      <div className="historia-mobile-media">
+        <img src={HistoriaImagen} alt="Recorrido histórico por La Quinta del Cholo" />
+      </div>
+
       <div className="historia-content">
         <h2 className="historia-titulo">Historia</h2>
         <div className="historia-texto">

@@ -1,6 +1,6 @@
 .cta-principal {
   width: 100%;
-  padding: 5rem 3rem;
+  padding: clamp(3rem, 6vw, 4.5rem) clamp(1.5rem, 5vw, 3rem);
   background-color: var(--color-crudo);
 }
 
@@ -8,17 +8,26 @@
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: minmax(0, 520px) minmax(0, 1fr);
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .cta-content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-right: 2rem;
-  padding-left: 50px;
+  gap: 1.2rem;
+  padding: clamp(1.8rem, 4vw, 2.6rem);
+  background-color: var(--color-crudo);
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 520px;
+  margin: 0 auto;
+  width: 100%;
+  justify-self: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .cta-eyebrow {
@@ -45,10 +54,9 @@
   font-family: var(--font-ui);
   font-size: 1rem;
   font-weight: 300;
-  color: var(--color-negro);
-  line-height: 1.8;
-  opacity: 0.85;
-  max-width: 410px;
+  color: rgba(26, 26, 26, 0.85);
+  line-height: 1.7;
+  max-width: 440px;
 }
 
 .cta-imagenes {
@@ -86,28 +94,39 @@
 
 .cta-botones {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .cta-boton {
   font-family: var(--font-ui);
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   border: none;
-  padding: 0.9rem 2rem;
+  padding: 0.55rem 1.35rem;
   background-color: var(--color-negro);
   color: var(--color-crudo);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  letter-spacing: 0.2px;
+  text-transform: none;
 }
 
 .cta-boton:hover {
-  background-color: #3b3737;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #2f2b1b;
+  transform: translateY(-1px);
+}
+
+.cta-botones .cta-boton:last-child {
+  background-color: transparent;
+  color: var(--color-negro);
+  border: 1px solid rgba(26, 26, 26, 0.45);
+}
+
+.cta-botones .cta-boton:last-child:hover {
+  background-color: rgba(26, 26, 26, 0.08);
 }
 
 @media (max-width: 968px) {
