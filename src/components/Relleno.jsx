@@ -1,6 +1,6 @@
 import React from 'react'
 import './Relleno.css'
-import ImagenRelleno from '../../assets/image_00028.png'
+import ImagenRelleno from '../../assets/IMAGEN FINAL qdc.png'
 import Socalo1 from '../../assets/Socalo 1.png'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Historia.css'
-import HistoriaImagen from '../../assets/PIC06918.webp'
+import HistoriaImagen from '../../assets/upscalemedia-transformed.jpeg'
 import HistoriaTextura from '../../assets/textura 1.jpg.jpg'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 

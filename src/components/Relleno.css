@@ -94,6 +94,7 @@
 
   .relleno-titulo {
     font-size: clamp(0.95rem, 3vw, 1.4rem);
+    text-align: center;
   }
 
   .relleno-texto {

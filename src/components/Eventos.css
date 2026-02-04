@@ -197,6 +197,13 @@
 }
 
 @media (max-width: 768px) {
+
+  .eventos {
+  width: 100%;
+  background-color: #f5eee4;
+  padding: 0 0 150px 0;
+  margin-bottom: 250px;
+}
   .eventos-background {
     min-height: 50vh;
     padding: 2rem 1.5rem;
