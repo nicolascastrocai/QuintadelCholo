@@ -58,52 +58,6 @@ function Eventos({ onAgregarReserva }) {
     }))
   }
 
-  const FormFields = () => (
-    <>
-      <h3 className="evento-form-titulo">{evento.nombre}</h3>
-      <p className="evento-form-descripcion" dangerouslySetInnerHTML={{ __html: evento.descripcion }}></p>
-
-      <div className="evento-form">
-        <div className="form-group">
-          <label>Tipo de evento</label>
-          <input
-            type="text"
-            placeholder="Ej: Casamiento"
-            value={formData[evento.id]?.tipoEvento || ''}
-            onChange={(e) => handleInputChange('tipoEvento', e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <label>Elegí tu fecha</label>
-          <input
-            type="date"
-            min={hoy}
-            ref={fechaInputRef}
-            onClick={abrirCalendario}
-            onFocus={abrirCalendario}
-            value={formData[evento.id]?.fechas || ''}
-            onChange={(e) => handleInputChange('fechas', e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <label>Cantidad de personas</label>
-          <input
-            type="number"
-            placeholder="Ej: 30"
-            value={formData[evento.id]?.personas || ''}
-            onChange={(e) => handleInputChange('personas', e.target.value)}
-          />
-        </div>
-        <button
-          className="evento-btn"
-          onClick={handleAgregar}
-        >
-          Cotizá tu evento
-        </button>
-      </div>
-    </>
-  )
-
   return (
     <section ref={ref} id="eventos" className={`eventos scroll-animate ${isVisible ? 'visible' : ''}`}>
       <div className="eventos-wrapper">
@@ -125,7 +79,48 @@ function Eventos({ onAgregarReserva }) {
               style={{ backgroundImage: `url(${evento.imagen})` }}
             />
             <div className="eventos-form-card-body">
-              <FormFields />
+              <h3 className="evento-form-titulo">{evento.nombre}</h3>
+              <p className="evento-form-descripcion" dangerouslySetInnerHTML={{ __html: evento.descripcion }}></p>
+
+              <div className="evento-form">
+                <div className="form-group">
+                  <label>Tipo de evento</label>
+                  <input
+                    type="text"
+                    placeholder="Ej: Casamiento"
+                    value={formData[evento.id]?.tipoEvento || ''}
+                    onChange={(e) => handleInputChange('tipoEvento', e.target.value)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Elegí tu fecha</label>
+                  <input
+                    type="date"
+                    min={hoy}
+                    ref={fechaInputRef}
+                    onClick={abrirCalendario}
+                    onFocus={abrirCalendario}
+                    value={formData[evento.id]?.fechas || ''}
+                    onChange={(e) => handleInputChange('fechas', e.target.value)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Cantidad de personas</label>
+                  <input
+                    type="number"
+                    min="1"
+                    placeholder="Ej: 30"
+                    value={formData[evento.id]?.personas || ''}
+                    onChange={(e) => handleInputChange('personas', e.target.value)}
+                  />
+                </div>
+                <button
+                  className="evento-btn"
+                  onClick={handleAgregar}
+                >
+                  Cotizá tu evento
+                </button>
+              </div>
             </div>
           </div>
         </div>
