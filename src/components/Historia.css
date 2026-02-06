@@ -82,6 +82,8 @@
     padding: 2.5rem 1.25rem 3rem;
     justify-content: center;
     flex-direction: column;
+    background-image: none !important;
+    background-color: var(--color-crudo);
   }
 
   .historia-content {
