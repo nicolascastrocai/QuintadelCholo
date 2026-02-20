@@ -54,9 +54,9 @@ function Footer() {
           <div className="footer-info-block">
             <h4>UBICACIÓN</h4>
             <p>
-              Estancia La Quinta<br />
-              Av. del Rosario 539<br />
-              General Lagos, Santa Fe
+              La Quinta del Cholo<br />
+              General Lagos, Santa Fe<br />
+              Argentina
             </p>
           </div>
           <div className="footer-info-block">
